@@ -186,6 +186,12 @@ p{margin:0}
 .kv dt{font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3);padding-top:3px}
 .kv dd{margin:0;color:var(--fg)}
 @media (max-width:480px){.kv div{grid-template-columns:1fr;gap:2px}}
+.uka-vivo{display:grid;gap:8px;padding:12px 14px;border:1px solid var(--line);background:var(--bg-2);font-size:.86rem}
+.uka-vivo .uka-cifras{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--fg)}
+.uka-vivo .uka-cifras b{font-family:var(--display);font-size:1.25rem;font-weight:500;color:var(--gold-ink);margin-right:4px}
+.uka-vivo ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.uka-vivo li a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
+.uka-vivo li span{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3)}
 .more{display:inline-flex;align-items:center;gap:8px;font:600 .74rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--oro);padding-bottom:4px;justify-self:start}
 .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:start}
 .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
@@ -418,9 +424,10 @@ td b{color:var(--fg);font-weight:600}
           <div class="ficha-h"><span>Seguimiento diario</span><span>En línea</span></div>
           <div class="ficha-b">
             <h3>Urgencias Kast</h3>
-            <p>Cada proyecto de ley al que el Ejecutivo asigna urgencia, con su estado de tramitación, un resumen y una lectura política. Se actualiza cada tres horas desde el Senado y la Cámara.</p>
-            <dl class="kv"><div><dt>Para</dt><dd>Equipos parlamentarios</dd></div><div><dt>Costo</dt><dd>Gratuito</dd></div></dl>
-            <a class="more" href="https://bdelasherasg.github.io/urgenciaskast/" target="_blank" rel="noopener">Abrir Urgencias Kast <span class="arrow">→</span></a>
+            <p>Los proyectos de ley que el Ejecutivo apura con urgencias y la agenda de ambas cámaras para las próximas dos semanas. Cada proyecto tiene un resumen verificable, las posiciones públicas de las organizaciones y la explicación de sus plazos. Se actualiza cada tres horas desde el Senado y la Cámara.</p>
+            <div class="uka-vivo" id="uka-vivo" aria-live="polite" hidden></div>
+            <dl class="kv"><div><dt>Para</dt><dd>Equipos parlamentarios, partidos, empresas y gremios, sindicatos y organizaciones sociales, periodistas</dd></div><div><dt>Costo</dt><dd>Gratuito</dd></div></dl>
+            <a class="more" href="https://urgenciaskast.cl/" target="_blank" rel="noopener">Abrir Urgencias Kast <span class="arrow">→</span></a>
           </div>
         </article>
       </div>
@@ -433,7 +440,7 @@ td b{color:var(--fg);font-weight:600}
         <span class="eyebrow">Para equipos parlamentarios</span>
         <h2 id="t-congreso" style="font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.18">Un informe que su parlamentario puede defender</h2>
         <div class="prose">
-          <p>La Asesoría Técnica Parlamentaria de la Biblioteca del Congreso entrega información técnica sin recomendar posiciones. Nosotros partimos de ahí y agregamos lo que su mandato excluye: <strong>qué se juega en un proyecto, quién gana y quién pierde, cómo se votará y qué posición y qué relato le convienen al parlamentario.</strong></p>
+          <p>La Asesoría Técnica Parlamentaria de la Biblioteca del Congreso entrega información técnica sin recomendar posiciones. Nosotros partimos de ahí y agregamos lo que su mandato excluye: <strong>qué se juega en un proyecto, quién gana y quién pierde, qué posturas existen de verdad, cuánto cuesta asumir cada una y qué posición y qué relato le convienen al parlamentario.</strong></p>
           <p>Cada informe es original, menciona todas sus fuentes y puede publicarse sin exponer al parlamentario. Ningún informe se replica entre clientes. Trabajamos con parlamentarios de distintos partidos del espacio progresista y liberal, con confidencialidad entre ellos.</p>
         </div>
         <div class="actions"><a class="btn btn-ink" href="#aportes">Solicitar una conversación <span class="arrow">→</span></a><a class="btn btn-outline" href="#metodo">Ver las herramientas</a></div>
@@ -910,7 +917,7 @@ td b{color:var(--fg);font-weight:600}
         <p class="full">Lo Común: Laboratorio de Relato y Producción Narrativa</p>
       </div>
       <div><h4>Secciones</h4><ul><li><a href="#metodo">Método</a></li><li><a href="#publicaciones">Publicaciones</a></li><li><a href="#monitor">Monitor económico</a></li><li><a href="#etica">Código ético</a></li><li><a href="#equipo">Equipo</a></li></ul></div>
-      <div><h4>Productos</h4><ul><li><a href="https://bdelasherasg.github.io/urgenciaskast/" target="_blank" rel="noopener">Urgencias Kast</a></li><li><a href="#publicaciones">Serie Prueba pública</a></li><li><a href="#aportes">Contacto y aportes</a></li></ul></div>
+      <div><h4>Productos</h4><ul><li><a href="https://urgenciaskast.cl/" target="_blank" rel="noopener">Urgencias Kast</a></li><li><a href="#publicaciones">Serie Prueba pública</a></li><li><a href="#aportes">Contacto y aportes</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <p>Producción pública bajo licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).</p>
@@ -942,6 +949,22 @@ td b{color:var(--fg);font-weight:600}
     function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('correo'));var s=getSelection();s.removeAllRanges();s.addRange(r);}
     try{navigator.clipboard.writeText(t).then(function(){c.textContent='Copiado';setTimeout(function(){c.textContent='Copiar'},1800)},sel);}catch(e){sel();}
   });
+})();
+</script>
+<script>
+/* Urgencias Kast en vivo: lee el resumen que publica urgenciaskast.cl cada tres horas. */
+(function(){
+  var caja=document.getElementById('uka-vivo'); if(!caja||!window.fetch)return;
+  function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  var M=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  function f(d){var p=String(d||'').split('-');return p.length===3?(+p[2])+' '+M[+p[1]-1]:'';}
+  fetch('https://urgenciaskast.cl/data/feed.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){
+    var c=d.conteos||{}, v=(d.proximos_vencimientos||[]).slice(0,3);
+    if(!c.urgencias_vigentes&&!v.length)return;
+    caja.innerHTML='<div class="uka-cifras"><span><b>'+esc(c.urgencias_vigentes)+'</b>proyectos con urgencia</span><span><b>'+esc(c.discusion_inmediata)+'</b>con discusión inmediata</span></div>'+
+      (v.length?'<ul>'+v.map(function(p){return '<li><span>'+esc(p.urgencia)+' · vence el '+esc(f(p.vence))+'</span><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc((p.sintesis||p.titulo||'').slice(0,120))+'</a></li>';}).join('')+'</ul>':'');
+    caja.hidden=false;
+  }).catch(function(){});
 })();
 </script>
 </body>

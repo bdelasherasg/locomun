@@ -1,0 +1,79 @@
+{
+ "sitio": "https://locomun.cl",
+ "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
+ "actualizado": "2026-10-30",
+ "publicaciones": [
+  {
+   "serie": "Prueba pública",
+   "numero": 2,
+   "titulo": "Las cuatro tesis del ministro Rabat: una prueba pública a la defensa de las rebajas de condena",
+   "autor": "Bernardo de Las Heras",
+   "fecha": "2026-10-29",
+   "fecha_texto": "29 de octubre de 2026",
+   "minutos": 20,
+   "proxima_prueba": "Ingreso del proyecto de ley",
+   "resumen": "Para defender las rebajas de condena, el ministro de Justicia formuló cuatro afirmaciones verificables. El artículo aplica a cada una el criterio de falsabilidad: las cuatro quedaron refutadas, tres por documentos del propio ministerio y la cuarta por el Presidente.",
+   "url": "https://locomun.cl/analisis/prueba-publica-2.html"
+  },
+  {
+   "serie": "Prueba pública",
+   "numero": 1,
+   "titulo": "Falsabilidad y discurso político: una prueba pública a los primeros siete meses del gobierno de Kast",
+   "autor": "Bernardo de Las Heras",
+   "fecha": "2026-10-20",
+   "fecha_texto": "20 de octubre de 2026",
+   "proxima_prueba": "2027-09-11",
+   "resumen": "Una afirmación política tiene valor de conocimiento cuando indica qué hechos la dejarían en evidencia. El artículo explica el criterio de falsabilidad de Karl Popper y lo aplica a las principales afirmaciones del gobierno entre marzo y octubre de 2026.",
+   "url": "https://urgenciaskast.cl/analisis/falsabilidad-kast.html",
+   "minutos": 30
+  }
+ ],
+ "monitor": [
+  {
+   "numero": 2,
+   "titulo": "Desempleo y fractura estructural en la Región de Valparaíso",
+   "resumen": "Diagnóstico del desempleo regional con las series trimestrales del INE: desocupación, informalidad, subempleo por horas, diferencias entre provincias y situación de las mujeres y de las personas mayores de 55 años.",
+   "autor": "Esteban Pinto",
+   "fecha_texto": "Octubre de 2026",
+   "cifras": [
+    [
+     "9,9%",
+     "desocupación regional entre julio y septiembre de 2026: 100.640 personas (INE)"
+    ],
+    [
+     "28,9%",
+     "tasa de ocupación informal en la región"
+    ],
+    [
+     "11,7%",
+     "desocupación de las mujeres, frente a 8,4% de los hombres"
+    ]
+   ],
+   "fuentes": "INE, Boletín N.° 125 (julio a septiembre de 2026); Observatorio Laboral de Valparaíso; OCEC UDP. Sin encargo de terceros",
+   "url": "https://sites.google.com/view/cesantiavregion/full-page-embed"
+  },
+  {
+   "numero": 1,
+   "titulo": "Mercado de cannabis de uso adulto en Chile",
+   "resumen": "Estudio de mercado del cannabis para mayores de 21 años en Chile: demografía de consumo según SENDA, tamaño de mercado, impacto fiscal frente a la Ley 20.000, costos de producción y un modelo de dispensario.",
+   "autor": "Esteban Pinto",
+   "fecha_texto": "",
+   "cifras": [
+    [
+     "10,1%",
+     "prevalencia anual en adultos, cerca de 1.000.000 de personas (SENDA, 16.° ENPG)"
+    ],
+    [
+     "$548.880 MM",
+     "mercado total estimado al año"
+    ],
+    [
+     "$180.550 MM",
+     "beneficio fiscal neto anual en madurez"
+    ]
+   ],
+   "fuentes": "Datos públicos; sin encargo de terceros",
+   "url": "https://sites.google.com/view/observatoriodemercadocannabis/full-page-embed"
+  }
+ ]
+}
