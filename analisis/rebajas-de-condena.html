@@ -273,7 +273,9 @@ td b{color:var(--fg);font-weight:600}
 .art-head h1{color:#f6f0e2;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.12;max-width:22ch;margin:14px 0 18px}
 .art-head .meta{font:500 .8rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:rgba(246,240,226,.75)}
 .art-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:start}
-@media (max-width:960px){.art-grid{grid-template-columns:1fr}}
+@media (max-width:960px){.art-grid{grid-template-columns:minmax(0,1fr)}}
+.art{min-width:0;overflow-wrap:break-word}
+.fuentes{overflow-wrap:anywhere}
 .art{max-width:var(--measure);color:var(--fg-2);font-size:1.04rem;line-height:1.7}
 .art h2{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.2;color:var(--fg);margin:2.2em 0 .6em}
 .art h3{font-size:1.2rem;color:var(--fg);margin:1.8em 0 .5em}
