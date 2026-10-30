@@ -12,7 +12,7 @@
    "fecha_texto": "29 de octubre de 2026",
    "minutos": 20,
    "proxima_prueba": "Ingreso del proyecto de ley",
-   "resumen": "Para defender las rebajas de condena, el ministro de Justicia formuló cuatro afirmaciones verificables. El artículo aplica a cada una el criterio de falsabilidad: las cuatro quedaron refutadas, tres por documentos del propio ministerio y la cuarta por el Presidente.",
+   "resumen": "Las cuatro afirmaciones con que el ministro de Justicia defendió las rebajas de condena, contrastadas con los documentos de su propio ministerio.",
    "url": "https://locomun.cl/analisis/prueba-publica-2.html"
   },
   {
@@ -22,17 +22,17 @@
    "autor": "Bernardo de Las Heras",
    "fecha": "2026-10-20",
    "fecha_texto": "20 de octubre de 2026",
-   "proxima_prueba": "2027-09-11",
-   "resumen": "Una afirmación política tiene valor de conocimiento cuando indica qué hechos la dejarían en evidencia. El artículo explica el criterio de falsabilidad de Karl Popper y lo aplica a las principales afirmaciones del gobierno entre marzo y octubre de 2026.",
-   "url": "https://urgenciaskast.cl/analisis/falsabilidad-kast.html",
-   "minutos": 30
+   "minutos": 30,
+   "proxima_prueba": "11 de septiembre de 2027",
+   "resumen": "Aplica el criterio de falsabilidad de Karl Popper a las principales afirmaciones del gobierno entre marzo y octubre de 2026.",
+   "url": "https://locomun.cl/analisis/prueba-publica-1.html"
   }
  ],
  "monitor": [
   {
    "numero": 2,
    "titulo": "Desempleo y fractura estructural en la Región de Valparaíso",
-   "resumen": "Diagnóstico del desempleo regional con las series trimestrales del INE: desocupación, informalidad, subempleo por horas, diferencias entre provincias y situación de las mujeres y de las personas mayores de 55 años.",
+   "resumen": "Diagnóstico del desempleo regional con las series trimestrales del INE: tasa de desocupación, informalidad, subempleo por horas, diferencias entre provincias y situación de las mujeres y de las personas mayores de 55 años. Cierra con cuatro medidas de política pública con metas a 24 meses.",
    "autor": "Esteban Pinto",
    "fecha_texto": "Octubre de 2026",
    "cifras": [
@@ -57,7 +57,7 @@
    "titulo": "Mercado de cannabis de uso adulto en Chile",
    "resumen": "Estudio de mercado del cannabis para mayores de 21 años en Chile: demografía de consumo según SENDA, tamaño de mercado, impacto fiscal frente a la Ley 20.000, costos de producción y un modelo de dispensario.",
    "autor": "Esteban Pinto",
-   "fecha_texto": "",
+   "fecha_texto": "Octubre de 2026",
    "cifras": [
     [
      "10,1%",
@@ -68,8 +68,8 @@
      "mercado total estimado al año"
     ],
     [
-     "$180.550 MM",
-     "beneficio fiscal neto anual en madurez"
+     "34%",
+     "tasa tributaria propuesta: 19% de IVA y 15% de impuesto específico"
     ]
    ],
    "fuentes": "Datos públicos; sin encargo de terceros",

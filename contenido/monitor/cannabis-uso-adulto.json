@@ -1,0 +1,36 @@
+{
+  "slug": "cannabis-uso-adulto",
+  "numero": 1,
+  "fecha": "2026-10-20",
+  "etiqueta": "Datos públicos",
+  "autor": "Esteban Pinto",
+  "titulo": "Mercado de cannabis de uso adulto en Chile",
+  "resumen": "Estudio de mercado del cannabis para mayores de 21 años en Chile: demografía de consumo según SENDA, tamaño de mercado, impacto fiscal frente a la Ley 20.000, costos de producción y un modelo de dispensario.",
+  "resumen_corto": "Tamaño de mercado, impacto fiscal frente a la Ley 20.000, costos de producción y un modelo de dispensario, con datos públicos.",
+  "cifras": [
+    {
+      "valor": "10,1%",
+      "texto": "prevalencia anual en adultos, cerca de 1.000.000 de personas (SENDA, 16.° ENPG)"
+    },
+    {
+      "valor": "$548.880 MM",
+      "texto": "mercado total estimado al año"
+    },
+    {
+      "valor": "34%",
+      "texto": "tasa tributaria propuesta: 19% de IVA y 15% de impuesto específico"
+    },
+    {
+      "valor": "$180.550 MM",
+      "texto": "beneficio fiscal neto anual en madurez"
+    },
+    {
+      "valor": "28,7% a 78,1%",
+      "texto": "menor precio legal frente al mercado ilegal"
+    }
+  ],
+  "fuentes": "Datos públicos; sin encargo de terceros",
+  "fuente_base": "SENDA, 16.° Estudio Nacional de Drogas",
+  "revision": "Doble revisión, con un revisor del equipo y uno externo",
+  "url": "https://sites.google.com/view/observatoriodemercadocannabis/full-page-embed"
+}

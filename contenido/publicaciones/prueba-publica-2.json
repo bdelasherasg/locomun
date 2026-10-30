@@ -1,0 +1,60 @@
+{
+  "slug": "prueba-publica-2",
+  "tipo": "articulo",
+  "clase": "Análisis con prueba pública",
+  "serie": "Prueba pública",
+  "numero": 2,
+  "fecha": "2026-10-29",
+  "lectura_minutos": 20,
+  "autor": "Bernardo de Las Heras",
+  "cargo_autor": "Codirector de Lo Común",
+  "titulo": "Las cuatro tesis del ministro Rabat: una prueba pública a la defensa de las rebajas de condena",
+  "titulo_corto": "Las cuatro tesis del ministro Rabat",
+  "bajada": "Entre marzo y septiembre de 2026, el Ministerio de Justicia rebajó las condenas de 56 agresores sexuales de menores. Para defender esas decisiones, el ministro Fernando Rabat formuló cuatro afirmaciones verificables. Este artículo las somete al mismo criterio de falsabilidad que la entrega anterior aplicó al discurso económico del gobierno: las cuatro quedaron refutadas por documentos del propio ministerio, y la última, por el propio Presidente. Esa admisión tiene consecuencias jurídicas que el gobierno todavía no reconoce.",
+  "presentacion": [
+    "Para defender las 56 rebajas de condena a agresores sexuales de menores, el ministro de Justicia formuló cuatro afirmaciones verificables: que la Corte Suprema lo obligaba, que el ministerio no tenía margen, que el gobierno anterior hizo lo mismo y que los decretos se ajustaron a la ley.",
+    "El artículo aplica a cada una el criterio de falsabilidad de la entrega N.° 1. Las cuatro quedaron <strong>refutadas</strong>, tres por documentos del propio ministerio y la cuarta por el Presidente. Cierra con <strong>cuatro pruebas pendientes</strong>, incorporadas al registro público."
+  ],
+  "resumen_portada": "Las cuatro afirmaciones con que el ministro de Justicia defendió las rebajas de condena, contrastadas con los documentos de su propio ministerio.",
+  "marco": "Falsacionismo (Popper, 1959); establecimiento de agenda (McCombs y Shaw, 1972)",
+  "fuentes": "Decretos del Ministerio de Justicia según Interferencia y otros medios citados; normas legales y constitucionales",
+  "condicion": "Declarada para cada tesis antes de examinar los documentos; cuatro pruebas pendientes con fecha",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Doble revisión, con un revisor del equipo y uno externo",
+  "original": null,
+  "proxima_prueba": "Ingreso del proyecto de ley",
+  "predicciones": [
+    {
+      "afirmacion": "La reparación anunciada excluirá las tres rebajas a condenados por crímenes de la dictadura",
+      "origen": "",
+      "refuta": "Que el proyecto de ley ingresado incluya expresamente esas rebajas.",
+      "verificacion": "Ingreso del proyecto",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "Rabat sostendrá ante la acusación constitucional la legalidad de los decretos",
+      "origen": "",
+      "refuta": "Que su contestación admita la ilegalidad o atribuya el criterio a un tercero sin sostener la legalidad.",
+      "verificacion": "Contestación de la acusación",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "El Gobierno no invalidará ningún decreto por la vía del artículo 53 de la Ley 19.880",
+      "origen": "",
+      "refuta": "Que algún decreto sea invalidado por ilegalidad en sede administrativa.",
+      "verificacion": "31 dic. 2026",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "El Presidente mantendrá a Rabat hasta el final del procedimiento de acusación",
+      "origen": "",
+      "refuta": "Que el Presidente lo remueva antes de la votación en la Cámara.",
+      "verificacion": "Votación en la Cámara",
+      "estado": "pendiente",
+      "nota": ""
+    }
+  ]
+}

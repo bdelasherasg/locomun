@@ -1,0 +1,17 @@
+.art-head{background:var(--indigo-deep);color:#f6f0e2;padding:64px 0 54px}
+.art-head .crumb{color:var(--oro)}
+.art-head h1{color:#f6f0e2;font-size:clamp(1.9rem,4vw,3rem);line-height:1.14;max-width:26ch;margin:14px 0 18px}
+.art-head .meta{font:500 .8rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:rgba(246,240,226,.75)}
+.art-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:start}
+@media (max-width:960px){.art-grid{grid-template-columns:minmax(0,1fr)}}
+.art{min-width:0;overflow-wrap:break-word;max-width:var(--measure);color:var(--fg-2);font-size:1.04rem;line-height:1.7}
+.art h2{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.2;color:var(--fg);margin:2.2em 0 .6em}
+.art p,.art ul,.art ol{margin:0 0 1em}
+.art li{margin:.45em 0}
+.art strong{color:var(--fg)}
+.art a{color:inherit;text-decoration-color:var(--oro);text-underline-offset:3px}
+.art .lead-art{font-size:1.16rem;color:var(--fg);line-height:1.6}
+.aside-sticky{position:sticky;top:96px;display:grid;gap:22px}
+@media (max-width:960px){.aside-sticky{position:static}}
+.refs{font-size:.86rem;color:var(--fg-3);overflow-wrap:anywhere}
+.refs p{margin:0 0 .7em;padding-left:1.4em;text-indent:-1.4em}

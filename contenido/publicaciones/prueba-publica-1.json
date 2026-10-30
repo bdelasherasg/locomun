@@ -1,0 +1,47 @@
+{
+  "slug": "prueba-publica-1",
+  "tipo": "articulo",
+  "clase": "Análisis con prueba pública",
+  "serie": "Prueba pública",
+  "numero": 1,
+  "fecha": "2026-10-20",
+  "lectura_minutos": 30,
+  "autor": "Bernardo de Las Heras",
+  "cargo_autor": "Codirector de Lo Común",
+  "titulo": "Falsabilidad y discurso político: una prueba pública a los primeros siete meses del gobierno de Kast",
+  "titulo_corto": "Falsabilidad y discurso político",
+  "bajada": "Una afirmación política tiene valor de conocimiento cuando indica qué hechos la dejarían en evidencia. Este artículo explica en términos simples el criterio de falsabilidad de Karl Popper y lo aplica a las principales afirmaciones del gobierno de José Antonio Kast entre marzo y octubre de 2026: varias fueron refutadas por datos públicos, otras se reformularon después de los hechos y la tesis económica de fondo tiene fecha de examen.",
+  "presentacion": [
+    "Una afirmación política tiene valor de conocimiento cuando indica qué hechos la dejarían en evidencia. El artículo explica en términos simples el criterio de falsabilidad de Karl Popper y lo aplica a las principales afirmaciones del gobierno entre marzo y octubre de 2026.",
+    "Clasifica cada afirmación en uno de cuatro destinos: <strong>corroborada, refutada, inmunizada o pendiente.</strong> Varias fueron refutadas por datos públicos, otras se reformularon después de los hechos y la tesis económica de fondo tiene fecha de examen."
+  ],
+  "resumen_portada": "Aplica el criterio de falsabilidad de Karl Popper a las principales afirmaciones del gobierno entre marzo y octubre de 2026.",
+  "marco": "Falsacionismo (Popper, 1959) y programas de investigación (Lakatos, 1970)",
+  "fuentes": "Dirección de Presupuestos, Banco Central, Consejo Fiscal Autónomo, encuestas y prensa citada",
+  "condicion": "Declarada por caso, antes de mirar los datos",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Doble revisión, con un revisor del equipo y uno externo",
+  "original": {
+    "sitio": "Urgencias Kast",
+    "url": "https://urgenciaskast.cl/analisis/falsabilidad-kast.html"
+  },
+  "proxima_prueba": "11 de septiembre de 2027",
+  "predicciones": [
+    {
+      "afirmacion": "Recorte de US$6.000 millones del gasto público en 18 meses, sin afectar beneficios sociales",
+      "origen": "Promesa de campaña; criterio fijado por el propio candidato",
+      "refuta": "Que la ejecución presupuestaria no muestre una reducción del gasto de esa magnitud al vencer el plazo.",
+      "verificacion": "11 sep. 2027",
+      "estado": "inmunizada",
+      "nota": "Hacienda la redefinió como ahorro proyectado"
+    },
+    {
+      "afirmacion": "Crecimiento de 3,3% en 2027, impulsado por la inversión tras la rebaja del impuesto corporativo",
+      "origen": "Proyección de Hacienda",
+      "refuta": "Crecimiento claramente bajo 3,3% y sin el salto anunciado de la inversión, sin un shock externo documentado.",
+      "verificacion": "Cuentas Nacionales 2027",
+      "estado": "pendiente",
+      "nota": ""
+    }
+  ]
+}
