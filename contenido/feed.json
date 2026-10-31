@@ -1,8 +1,20 @@
 {
  "sitio": "https://locomun.cl",
  "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
- "actualizado": "2026-10-30",
+ "actualizado": "2026-10-31",
  "publicaciones": [
+  {
+   "serie": "",
+   "numero": null,
+   "titulo": "Rebaja de condenas: coherencia y palabras en la respuesta del Congreso",
+   "autor": "Bernardo de Las Heras",
+   "fecha": "2026-10-31",
+   "fecha_texto": "31 de octubre de 2026",
+   "minutos": 15,
+   "proxima_prueba": "Presentación de la acusación constitucional contra el ministro de Justicia, que algunas versiones sitúan el martes 3 de noviembre de 2026 y otras en unos veinte días",
+   "resumen": "Análisis de las seis iniciativas del Congreso sobre la rebaja de condenas: cómo definen el problema, si sus actores son coherentes y qué pesan las palabras del debate.",
+   "url": "https://locomun.cl/analisis/rebaja-de-condenas-coherencia-y-palabras.html"
+  },
   {
    "serie": "Prueba pública",
    "numero": 2,
