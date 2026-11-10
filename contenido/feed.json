@@ -1,8 +1,20 @@
 {
  "sitio": "https://locomun.cl",
  "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
- "actualizado": "2026-10-31",
+ "actualizado": "2026-11-10",
  "publicaciones": [
+  {
+   "serie": "",
+   "numero": null,
+   "titulo": "El mercado del cannabis ya existe en Chile. La única pregunta es quién se queda con el dinero.",
+   "autor": "Esteban Pinto",
+   "fecha": "2026-11-10",
+   "fecha_texto": "10 de noviembre de 2026",
+   "minutos": 4,
+   "proxima_prueba": "",
+   "resumen": "Un mercado de cerca de US$500 millones ya opera en Chile sin recaudar impuestos. La columna usa cifras de SENDA y de Lo Común para examinar qué cambiaría con una regulación.",
+   "url": "https://locomun.cl/analisis/cannabis-en-chile-quien-se-queda-con-el.html"
+  },
   {
    "serie": "",
    "numero": null,
