@@ -37,8 +37,14 @@ function reemplazar(html, nombre, contenido) {
   return html.replace(re, (_, a, b) => `${a}\n${contenido}\n${b}`);
 }
 
-const numeroTexto = (p) => (p.numero ? `N.° ${p.numero}` : p.clase);
-const etiquetaSerie = (p) => (p.serie ? `Serie ${p.serie} · ${numeroTexto(p)} · ${fechaTexto(p.fecha)}` : `${p.clase} · ${fechaTexto(p.fecha)}`);
+const numeroTexto = (p) => (p.numero ? `N.° ${p.numero}` : (p.clase || ''));
+const etiquetaSerie = (p) => [p.serie ? `Serie ${p.serie}` : '', p.serie ? numeroTexto(p) : p.clase, p.fecha ? fechaTexto(p.fecha) : ''].filter(Boolean).join(' · ');
+// Ningún dato es obligatorio: lo que no viene no se muestra (ni su etiqueta).
+const dato = (k, v) => (v ? `<div><dt>${k}</dt><dd>${v}</dd></div>` : '');
+// Párrafo con las frases que existan (escapadas) y lista de datos solo si hay alguno.
+const lista = (frases) => { const t = frases.filter(Boolean).map(esc).join(' '); return t ? `<p>${t}</p>` : ''; };
+const kv = (html) => (html ? `<dl class="kv">${html}</dl>` : '');
+const parrafos = (p) => { const x = (p.presentacion || []).filter((t) => String(t || '').trim()); return x.length ? x : [p.bajada].filter(Boolean); };
 
 /* ---------- index.html ---------- */
 function bloquePublicacion(p, i) {
@@ -55,7 +61,7 @@ function bloquePublicacion(p, i) {
         <span class="eyebrow">${esc(etiquetaSerie(p))}</span>
         <h2 id="t-${p.slug}" style="font-size:clamp(1.7rem,2.8vw,2.3rem);line-height:1.2">${esc(p.titulo)}</h2>
         <div class="prose">
-${(p.presentacion || [p.bajada]).map((x) => `          <p>${rico(x)}</p>`).join('\n')}
+${parrafos(p).map((x) => `          <p>${rico(x)}</p>`).join('\n')}
         </div>
         <a class="btn btn-ink" href="analisis/${p.slug}.html" style="justify-self:start">Leer el artículo completo <span class="arrow">→</span></a>
       </div>
@@ -93,12 +99,9 @@ function tarjetaEstudio(e) {
         <div class="ficha-h"><span>Estudio ${esc(e.numero)}</span><span>${esc(e.etiqueta || mesTexto(e.fecha))}</span></div>
         <div class="ficha-b" style="gap:20px;padding:30px 30px 32px">
           <h3 style="font-size:1.8rem">${esc(e.titulo)}</h3>
-          <p style="font-size:1rem;max-width:var(--measure)">${esc(e.resumen)}</p>
-          <ul class="cifras">
-${(e.cifras || []).map((c) => `            <li><b>${esc(c.valor)}</b><span>${esc(c.texto)}</span></li>`).join('\n')}
-          </ul>
-          <dl class="kv"><div><dt>Autor</dt><dd>${esc(e.autor)}</dd></div>${e.revision ? `<div><dt>Revisión</dt><dd>${esc(e.revision)}</dd></div>` : ''}<div><dt>Fuentes</dt><dd>${esc(e.fuentes)}</dd></div></dl>
-          <a class="btn btn-ink" href="${esc(e.url)}" target="_blank" rel="noopener" style="justify-self:start">Ver estudio completo <span class="arrow">→</span></a>
+${e.resumen ? `          <p style="font-size:1rem;max-width:var(--measure)">${esc(e.resumen)}</p>\n` : ''}${(e.cifras || []).length ? `          <ul class="cifras">
+${e.cifras.map((c) => `            <li><b>${esc(c.valor)}</b><span>${esc(c.texto)}</span></li>`).join('\n')}
+          </ul>\n` : ''}${(e.autor || e.revision || e.fuentes) ? `          <dl class="kv">${dato('Autor', esc(e.autor))}${dato('Revisión', esc(e.revision))}${dato('Fuentes', esc(e.fuentes))}</dl>\n` : ''}${e.url ? `          <a class="btn btn-ink" href="${esc(e.url)}" target="_blank" rel="noopener" style="justify-self:start">Ver estudio completo <span class="arrow">→</span></a>` : ''}
         </div>
       </article>`;
 }
@@ -109,11 +112,11 @@ function portada() {
   if (p) {
     const anterior = pubs.find((x) => x !== p && x.serie === p.serie);
     out.push(`        <article class="ficha">
-          <div class="ficha-h"><span>${esc(p.serie || p.clase)}</span><span>${esc(numeroTexto(p))}</span></div>
+          <div class="ficha-h"><span>${esc(p.serie || p.clase || 'Publicación')}</span><span>${esc(p.serie ? numeroTexto(p) : '')}</span></div>
           <div class="ficha-b">
             <h3>${esc(p.titulo_corto || p.titulo)}</h3>
-            <p>${esc(p.resumen_portada || p.bajada)}${anterior ? ` La entrega ${esc(numeroTexto(anterior))} está en Publicaciones.` : ''}</p>
-            <dl class="kv"><div><dt>Autor</dt><dd>${esc(p.autor)}</dd></div><div><dt>Fecha</dt><dd>${fechaTexto(p.fecha)}</dd></div>${p.proxima_prueba ? `<div><dt>Próxima prueba</dt><dd>${esc(p.proxima_prueba)}</dd></div>` : ''}</dl>
+            ${lista([p.resumen_portada || p.bajada, anterior ? `La entrega ${numeroTexto(anterior)} está en Publicaciones.` : ''])}
+            ${kv(dato('Autor', esc(p.autor)) + dato('Fecha', p.fecha ? fechaTexto(p.fecha) : '') + dato('Próxima prueba', esc(p.proxima_prueba)))}
             <a class="more" href="analisis/${p.slug}.html">Leer el artículo <span class="arrow">→</span></a>
           </div>
         </article>`);
@@ -124,8 +127,8 @@ function portada() {
           <div class="ficha-h"><span>Monitor económico</span><span>${estudios.length} ${estudios.length === 1 ? 'estudio' : 'estudios'}</span></div>
           <div class="ficha-b">
             <h3>${esc(e.titulo)}</h3>
-            <p>${esc(e.resumen_corto || e.resumen)}${otros.length ? ` También en el Monitor: ${esc(otros.join('; '))}.` : ''}</p>
-            <dl class="kv"><div><dt>Autor</dt><dd>${esc(e.autor)}</dd></div>${e.fuente_base ? `<div><dt>Fuente base</dt><dd>${esc(e.fuente_base)}</dd></div>` : ''}</dl>
+            ${lista([e.resumen_corto || e.resumen, otros.length ? `También en el Monitor: ${otros.join('; ')}.` : ''])}
+            ${kv(dato('Autor', esc(e.autor)) + dato('Fuente base', esc(e.fuente_base)))}
             <a class="more" href="#monitor">Ver en el Monitor <span class="arrow">→</span></a>
           </div>
         </article>`);
@@ -171,9 +174,9 @@ function pagina(p) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(tituloPagina)} · Lo Común</title>
-<meta name="description" content="${esc(p.resumen_portada || p.bajada)}">
+<meta name="description" content="${esc(p.resumen_portada || p.bajada || p.titulo)}">
 <meta property="og:title" content="${esc(tituloPagina)}">
-<meta property="og:description" content="${esc(p.resumen_portada || p.bajada)}">
+<meta property="og:description" content="${esc(p.resumen_portada || p.bajada || p.titulo)}">
 <meta property="og:type" content="article">
 ${p.original ? `<link rel="canonical" href="${esc(p.original.url)}">\n` : ''}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,7 +195,7 @@ ${cabecera}
   </div></div>
   <section class="sec"><div class="wrap art-grid">
     <article class="art">
-      <p class="lead-art">${rico(p.bajada)}</p>
+      ${p.bajada ? `<p class="lead-art">${rico(p.bajada)}</p>` : ''}
       ${cuerpo.trim()}
     </article>
     <div class="aside-sticky">
