@@ -4,6 +4,18 @@
  "actualizado": "2026-11-12",
  "publicaciones": [
   {
+   "serie": "Prueba pública",
+   "numero": 3,
+   "titulo": "El Contrato Móvil de la Inteligencia Artificial: Devaluación de Cuotas, Economía Agéntica y Asimetría de Información",
+   "autor": "Esteban Pinto",
+   "fecha": "2026-11-12",
+   "fecha_texto": "12 de noviembre de 2026",
+   "minutos": 28,
+   "proxima_prueba": "31 de enero de 2027: verificación de si OpenAI puso en marcha el fondo común de tokens entre ChatGPT y Codex (condición 5)",
+   "resumen": "Análisis de por qué las suscripciones de inteligencia artificial de US$20 entregan menos capacidad con el tiempo, con seis predicciones verificables hasta diciembre de 2027.",
+   "url": "https://locomun.cl/analisis/prueba-publica-3.html"
+  },
+  {
    "serie": "",
    "numero": null,
    "titulo": "Sucursales de campaña y políticos de Excel: por qué los partidos chilenos solo existen cada cuatro años",
