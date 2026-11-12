@@ -1,8 +1,20 @@
 {
  "sitio": "https://locomun.cl",
  "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
- "actualizado": "2026-11-10",
+ "actualizado": "2026-11-12",
  "publicaciones": [
+  {
+   "serie": "",
+   "numero": null,
+   "titulo": "Sucursales de campaña y políticos de Excel: por qué los partidos chilenos solo existen cada cuatro años",
+   "autor": "Esteban Pinto",
+   "fecha": "2026-11-12",
+   "fecha_texto": "12 de noviembre de 2026",
+   "minutos": 4,
+   "proxima_prueba": "",
+   "resumen": "Columna sobre cómo los partidos chilenos podrían pasar de estructuras de campaña a organizaciones con presencia territorial permanente, en cuatro pilares.",
+   "url": "https://locomun.cl/analisis/sucursales-de-campana-y-politicos-de-excel.html"
+  },
   {
    "serie": "",
    "numero": null,
