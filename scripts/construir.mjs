@@ -184,6 +184,7 @@ ${p.original ? `<link rel="canonical" href="${esc(p.original.url)}">\n` : ''}<li
 ${cssSitio}
 <style>
 ${cssArticulo}</style>
+<script src="../analitica.js" defer></script>
 </head>
 <body>
 ${cabecera}
