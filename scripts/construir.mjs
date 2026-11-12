@@ -155,6 +155,32 @@ const cabecera = index.slice(index.indexOf('<header class="top">'), index.indexO
 const pie = index.slice(index.indexOf('<footer class="foot">'), index.indexOf('</footer>') + 9).replace(/href="#/g, 'href="../#');
 const cssArticulo = leer('scripts/articulo.css');
 
+
+/* ---------- SEO: URL canónica, datos estructurados, sitemap y llms.txt ---------- */
+const SITIO = 'https://locomun.cl';
+const textoPlano = (t) => String(t == null ? '' : t).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+// Una publicación con "original" declara como canónica la URL donde apareció primero.
+const urlPropia = (p) => `${SITIO}/analisis/${p.slug}.html`;
+const urlDePagina = (p) => (p.original && p.original.url ? p.original.url : urlPropia(p));
+function jsonLdArticulo(p, url, descripcion) {
+  const dato = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: textoPlano(p.titulo),
+    description: descripcion,
+    inLanguage: 'es-CL',
+    datePublished: p.fecha,
+    dateModified: p.fecha_modificacion || p.fecha,
+    author: { '@type': 'Person', name: p.autor, ...(p.cargo_autor ? { jobTitle: p.cargo_autor } : {}) },
+    publisher: { '@type': 'Organization', '@id': `${SITIO}/#organizacion`, name: 'Lo Común', url: `${SITIO}/` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    image: `${SITIO}/img/salon.jpg`,
+    license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    ...(p.serie ? { isPartOf: { '@type': 'CreativeWorkSeries', name: p.serie } } : {}),
+  };
+  return JSON.stringify(dato).replace(/</g, '\\u003c');
+}
+
 function pagina(p) {
   const cuerpo = fs.existsSync(path.join(RAIZ, `contenido/publicaciones/${p.slug}.html`)) ? leer(`contenido/publicaciones/${p.slug}.html`) : '';
   const misma = pubs.filter((x) => x.serie && x.serie === p.serie).sort((a, b) => (a.numero || 0) - (b.numero || 0));
@@ -168,17 +194,32 @@ function pagina(p) {
     ['Conflictos', esc(p.conflictos)], ['Revisión', esc(p.revision)], ['Licencia', 'CC BY-SA 4.0'],
   ].filter((x) => x && x[1]).map(([k, v]) => [k, k === 'Serie' || k === 'Clase' || k === 'Autor' ? esc(v) : v]);
   const tituloPagina = p.serie ? `${p.serie} ${numeroTexto(p)}: ${p.titulo_corto || p.titulo}` : (p.titulo_corto || p.titulo);
+  const descripcion = textoPlano(p.resumen_portada || p.bajada || p.titulo);
+  const urlCanonica = urlDePagina(p);
   return `<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(tituloPagina)} · Lo Común</title>
-<meta name="description" content="${esc(p.resumen_portada || p.bajada || p.titulo)}">
+<meta name="description" content="${esc(descripcion)}">
 <meta property="og:title" content="${esc(tituloPagina)}">
-<meta property="og:description" content="${esc(p.resumen_portada || p.bajada || p.titulo)}">
+<meta property="og:description" content="${esc(descripcion)}">
 <meta property="og:type" content="article">
-${p.original ? `<link rel="canonical" href="${esc(p.original.url)}">\n` : ''}<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta property="og:site_name" content="Lo Común">
+<meta property="og:locale" content="es_CL">
+<meta property="og:url" content="${esc(urlCanonica)}">
+<meta property="og:image" content="${SITIO}/img/salon.jpg">
+<meta property="article:published_time" content="${esc(p.fecha)}">
+<meta property="article:author" content="${esc(p.autor)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(tituloPagina)}">
+<meta name="twitter:description" content="${esc(descripcion)}">
+<meta name="twitter:image" content="${SITIO}/img/salon.jpg">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="${esc(urlCanonica)}">
+<script type="application/ld+json">${jsonLdArticulo(p, urlCanonica, descripcion)}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 ${cssSitio}
@@ -240,5 +281,51 @@ const feed = {
 };
 const sinFecha = (f) => JSON.stringify({ ...f, actualizado: '' });
 if (sinFecha(feed) !== sinFecha(feedPrevio)) escribir(feedRuta, JSON.stringify(feed, null, 1) + '\n');
+
+/* ---------- sitemap.xml y llms.txt ---------- */
+const propias = pubs.filter((p) => !(p.original && p.original.url));
+const urlsMapa = [`  <url><loc>${SITIO}/</loc><lastmod>${(pubs[0] && pubs[0].fecha) || hoy}</lastmod><priority>1.0</priority></url>`]
+  .concat(propias.map((p) => `  <url><loc>${urlPropia(p)}</loc><lastmod>${esc(p.fecha_modificacion || p.fecha)}</lastmod><priority>0.8</priority></url>`));
+escribir('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlsMapa.join('\n')}\n</urlset>\n`);
+
+const lineaPub = (p) => {
+  const t = p.serie ? `${p.serie} ${numeroTexto(p)}: ${p.titulo_corto || p.titulo}` : (p.titulo_corto || p.titulo);
+  return `- [${textoPlano(t)}](${urlDePagina(p)}): ${textoPlano(p.resumen_portada || p.bajada || p.titulo)} (${p.autor}, ${fechaTexto(p.fecha)})`;
+};
+const lineaEst = (e) => `- [${textoPlano(e.titulo)}](${e.url}): ${textoPlano(e.resumen_corto || e.resumen)} (${e.autor})`;
+const llms = `# Lo Común
+
+> Lo Común: Laboratorio de Relato y Producción Narrativa. Traduce la teoría política en relato, dispositivos de comunicación pública y medición para el trabajo parlamentario del espacio progresista y liberal chileno, con método público y verdad de hecho.
+
+Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la crítica con ficha epistémica, condiciones de refutación y fechas de verificación. Sus codirectores son Bernardo de Las Heras y Esteban Pinto. Es una entidad independiente del Congreso Nacional y de la Biblioteca del Congreso Nacional.
+
+## Secciones del sitio
+
+- [Inicio](${SITIO}/): tesis, diagnósticos, funciones y condiciones de una acción comunicativa correcta.
+- [Método](${SITIO}/#metodo): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
+- [Publicaciones](${SITIO}/#publicaciones): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
+- [Monitor económico](${SITIO}/#monitor): estudios de mercado de materias que discute el Congreso.
+- [Código ético](${SITIO}/#etica): reglas de trabajo verificables, compromisos con clientes y límites.
+- [Equipo](${SITIO}/#equipo): biografías de los codirectores.
+- [Aportes y contacto](${SITIO}/#aportes): encargos, aportes de autores y aportes voluntarios.
+
+## Publicaciones
+
+${pubs.map(lineaPub).join('\n')}
+
+## Monitor económico
+
+${estudios.map(lineaEst).join('\n')}
+
+## Producto relacionado
+
+- [Urgencias Kast](https://urgenciaskast.cl/): seguimiento gratuito de los proyectos con urgencia del Ejecutivo y de la agenda legislativa de dos semanas, con fichas por proyecto.
+
+## Contacto y licencia
+
+- Correo: contacto@locomun.cl
+- Licencia de la producción pública: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+`;
+escribir('llms.txt', llms);
 
 console.log(`Construido: ${pubs.length} publicaciones, ${estudios.length} estudios.`);

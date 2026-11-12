@@ -1,0 +1,39 @@
+# Lo Común
+
+> Lo Común: Laboratorio de Relato y Producción Narrativa. Traduce la teoría política en relato, dispositivos de comunicación pública y medición para el trabajo parlamentario del espacio progresista y liberal chileno, con método público y verdad de hecho.
+
+Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la crítica con ficha epistémica, condiciones de refutación y fechas de verificación. Sus codirectores son Bernardo de Las Heras y Esteban Pinto. Es una entidad independiente del Congreso Nacional y de la Biblioteca del Congreso Nacional.
+
+## Secciones del sitio
+
+- [Inicio](https://locomun.cl/): tesis, diagnósticos, funciones y condiciones de una acción comunicativa correcta.
+- [Método](https://locomun.cl/#metodo): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
+- [Publicaciones](https://locomun.cl/#publicaciones): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
+- [Monitor económico](https://locomun.cl/#monitor): estudios de mercado de materias que discute el Congreso.
+- [Código ético](https://locomun.cl/#etica): reglas de trabajo verificables, compromisos con clientes y límites.
+- [Equipo](https://locomun.cl/#equipo): biografías de los codirectores.
+- [Aportes y contacto](https://locomun.cl/#aportes): encargos, aportes de autores y aportes voluntarios.
+
+## Publicaciones
+
+- [Prueba pública N.° 3: El contrato móvil de la inteligencia artificial](https://locomun.cl/analisis/prueba-publica-3.html): Análisis de por qué las suscripciones de inteligencia artificial de US$20 entregan menos capacidad con el tiempo, con seis predicciones verificables hasta diciembre de 2027. (Esteban Pinto, 12 de noviembre de 2026)
+- [Retiro del tope de $20 y congelamiento de combustibles](https://locomun.cl/analisis/retiro-del-tope-de-20-y-congelamiento-de.html): Ficha de Lo Común sobre el retiro del tope de $20 a los combustibles y el nuevo proyecto de congelamiento: hechos, coherencia del Gobierno y vías de acción. (Esteban Pinto, 12 de noviembre de 2026)
+- [Sucursales de campaña y políticos de Excel](https://clicknews.cl/sucursales-de-campana-y-politicos-de-excel-por-que-los-partidos-chilenos-solo-existen-cada-cuatro-anos/): Columna sobre cómo los partidos chilenos podrían pasar de estructuras de campaña a organizaciones con presencia territorial permanente, en cuatro pilares. (Esteban Pinto, 12 de noviembre de 2026)
+- [Cannabis en Chile: quién se queda con el dinero](https://locomun.cl/analisis/cannabis-en-chile-quien-se-queda-con-el.html): Un mercado de cerca de US$500 millones ya opera en Chile sin recaudar impuestos. La columna usa cifras de SENDA y de Lo Común para examinar qué cambiaría con una regulación. (Esteban Pinto, 10 de noviembre de 2026)
+- [Rebaja de condenas: coherencia y palabras](https://locomun.cl/analisis/rebaja-de-condenas-coherencia-y-palabras.html): Análisis de las seis iniciativas del Congreso sobre la rebaja de condenas: cómo definen el problema, si sus actores son coherentes y qué pesan las palabras del debate. (Bernardo de Las Heras, 31 de octubre de 2026)
+- [Prueba pública N.° 2: Las cuatro tesis del ministro Rabat](https://locomun.cl/analisis/prueba-publica-2.html): Las cuatro afirmaciones con que el ministro de Justicia defendió las rebajas de condena, contrastadas con los documentos de su propio ministerio. (Bernardo de Las Heras, 29 de octubre de 2026)
+- [Prueba pública N.° 1: Falsabilidad y discurso político](https://urgenciaskast.cl/analisis/falsabilidad-kast.html): Aplica el criterio de falsabilidad de Karl Popper a las principales afirmaciones del gobierno entre marzo y octubre de 2026. (Bernardo de Las Heras, 20 de octubre de 2026)
+
+## Monitor económico
+
+- [Desempleo y fractura estructural en la Región de Valparaíso](https://sites.google.com/view/cesantiavregion/full-page-embed): Desocupación, informalidad y subempleo por provincia, con la situación de las mujeres y de los mayores de 55 años, según las series del INE. (Esteban Pinto)
+- [Mercado de cannabis de uso adulto en Chile](https://sites.google.com/view/observatoriodemercadocannabis/full-page-embed): Tamaño de mercado, impacto fiscal frente a la Ley 20.000, costos de producción y un modelo de dispensario, con datos públicos. (Esteban Pinto)
+
+## Producto relacionado
+
+- [Urgencias Kast](https://urgenciaskast.cl/): seguimiento gratuito de los proyectos con urgencia del Ejecutivo y de la agenda legislativa de dos semanas, con fichas por proyecto.
+
+## Contacto y licencia
+
+- Correo: contacto@locomun.cl
+- Licencia de la producción pública: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
