@@ -6,6 +6,7 @@
 // Uso: node scripts/construir.mjs   (lo ejecuta la acción de GitHub en cada cambio de contenido)
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const RAIZ = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const leer = (r) => fs.readFileSync(path.join(RAIZ, r), 'utf8');
@@ -149,11 +150,16 @@ index = reemplazar(index, 'portada', portada());
 escribir('index.html', index);
 
 /* ---------- páginas de artículo ---------- */
-const i0 = index.indexOf('<style>\n/* Layout');
+const i0 = index.lastIndexOf('<style>', index.indexOf('/* Layout'));
 const cssSitio = index.slice(i0, index.indexOf('</style>', i0) + 8);
 const cabecera = index.slice(index.indexOf('<header class="top">'), index.indexOf('</header>') + 9).replace(/href="#/g, 'href="../#');
 const pie = index.slice(index.indexOf('<footer class="foot">'), index.indexOf('</footer>') + 9).replace(/href="#/g, 'href="../#');
 const cssArticulo = leer('scripts/articulo.css');
+// Hoja de estilos compartida por las páginas de artículo: se descarga una vez y queda en caché.
+const cssPagina = cssSitio.replace(/^<style>\n?/, '').replace(/<\/style>$/, '') + '\n' + cssArticulo;
+fs.mkdirSync(path.join(RAIZ, 'css'), { recursive: true });
+escribir('css/pagina.css', cssPagina);
+const versionCss = crypto.createHash('sha1').update(cssPagina).digest('hex').slice(0, 8);
 
 
 /* ---------- SEO: URL canónica, datos estructurados, sitemap y llms.txt ---------- */
@@ -178,7 +184,15 @@ function jsonLdArticulo(p, url, descripcion) {
     license: 'https://creativecommons.org/licenses/by-sa/4.0/',
     ...(p.serie ? { isPartOf: { '@type': 'CreativeWorkSeries', name: p.serie } } : {}),
   };
-  return JSON.stringify(dato).replace(/</g, '\\u003c');
+  const migas = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Lo Común', item: `${SITIO}/` },
+      { '@type': 'ListItem', position: 2, name: 'Publicaciones', item: `${SITIO}/#publicaciones` },
+      { '@type': 'ListItem', position: 3, name: textoPlano(p.titulo_corto || p.titulo), item: url },
+    ],
+  };
+  return JSON.stringify([dato, migas]).replace(/</g, '\\u003c');
 }
 
 function pagina(p) {
@@ -219,12 +233,9 @@ function pagina(p) {
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="${esc(urlCanonica)}">
 <script type="application/ld+json">${jsonLdArticulo(p, urlCanonica, descripcion)}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
-${cssSitio}
-<style>
-${cssArticulo}</style>
+<link rel="preload" href="../fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/pagina.css?v=${versionCss}">
 <script src="../analitica.js" defer></script>
 </head>
 <body>
