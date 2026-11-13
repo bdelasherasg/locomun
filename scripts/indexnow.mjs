@@ -9,7 +9,7 @@ try {
   const urls = new Set();
   for (const f of cambios) {
     if (f === 'index.html') urls.add(`${SITIO}/`);
-    else if (/^analisis\/.+\.html$/.test(f)) urls.add(`${SITIO}/${f}`);
+    else if (/^(analisis\/)?[a-z0-9-]+\.html$/.test(f)) urls.add(`${SITIO}/${f}`);
   }
   if (!urls.size) { console.log('IndexNow: sin páginas nuevas.'); process.exit(0); }
   const r = await fetch('https://api.indexnow.org/IndexNow', {

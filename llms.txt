@@ -7,12 +7,12 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 ## Secciones del sitio
 
 - [Inicio](https://locomun.cl/): tesis, diagnósticos, funciones y condiciones de una acción comunicativa correcta.
-- [Método](https://locomun.cl/#metodo): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
-- [Publicaciones](https://locomun.cl/#publicaciones): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
-- [Monitor económico](https://locomun.cl/#monitor): estudios de mercado de materias que discute el Congreso.
-- [Código ético](https://locomun.cl/#etica): reglas de trabajo verificables, compromisos con clientes y límites.
-- [Equipo](https://locomun.cl/#equipo): biografías de los codirectores.
-- [Aportes y contacto](https://locomun.cl/#aportes): encargos, aportes de autores y aportes voluntarios.
+- [Método](https://locomun.cl/metodo.html): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
+- [Publicaciones](https://locomun.cl/publicaciones.html): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
+- [Monitor económico](https://locomun.cl/monitor.html): estudios de mercado de materias que discute el Congreso.
+- [Código ético](https://locomun.cl/etica.html): reglas de trabajo verificables, compromisos con clientes y límites.
+- [Equipo](https://locomun.cl/equipo.html): biografías de los codirectores.
+- [Aportes y contacto](https://locomun.cl/aportes.html): encargos, aportes de autores y aportes voluntarios.
 
 ## Publicaciones
 

@@ -1,6 +1,6 @@
 name: Construir sitio
 # Cada vez que cambia el contenido (lo publica el panel de Lo Común), se regeneran
-# index.html, las páginas de analisis/, contenido/feed.json, sitemap.xml y llms.txt, y se publican.
+# index.html y las páginas de cada sección (desde fuente/sitio.html), las páginas de analisis/, contenido/feed.json, sitemap.xml y llms.txt, y se publican.
 on:
   push:
     branches: [main]
@@ -8,6 +8,7 @@ on:
       - 'contenido/publicaciones/**'
       - 'contenido/monitor/**'
       - 'scripts/**'
+      - 'fuente/**'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
         run: |
           git config user.name "Lo Común (construcción automática)"
           git config user.email "construccion@users.noreply.github.com"
-          git add index.html analisis css contenido/feed.json sitemap.xml llms.txt
+          git add index.html metodo.html publicaciones.html monitor.html etica.html equipo.html aportes.html analisis css contenido/feed.json sitemap.xml llms.txt
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -m "Construcción automática del sitio"
           git pull --rebase origin main

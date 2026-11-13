@@ -1,7 +1,9 @@
 // Construye las partes del sitio que dependen del contenido.
 //
 // Fuente: contenido/publicaciones/*.json (con su cuerpo en *.html) y contenido/monitor/*.json.
-// Salida: los bloques marcados de index.html, las páginas analisis/<slug>.html y contenido/feed.json.
+// Fuente del sitio: fuente/sitio.html (todas las secciones en un archivo, con bloques marcados <!-- auto:... -->).
+// Salida: index.html y una página por sección (metodo.html, publicaciones.html, ...), las páginas analisis/<slug>.html,
+// contenido/feed.json, sitemap.xml y llms.txt.
 //
 // Uso: node scripts/construir.mjs   (lo ejecuta la acción de GitHub en cada cambio de contenido)
 import fs from 'node:fs';
@@ -34,7 +36,7 @@ const estudios = cargar('monitor').sort((a, b) => String(b.fecha).localeCompare(
 
 function reemplazar(html, nombre, contenido) {
   const re = new RegExp(`(<!-- auto:${nombre} -->)[\\s\\S]*?(<!-- /auto:${nombre} -->)`);
-  if (!re.test(html)) throw new Error(`Falta el marcador auto:${nombre} en index.html`);
+  if (!re.test(html)) throw new Error(`Falta el marcador auto:${nombre} en fuente/sitio.html`);
   return html.replace(re, (_, a, b) => `${a}\n${contenido}\n${b}`);
 }
 
@@ -137,7 +139,7 @@ function portada() {
   return out.join('\n');
 }
 
-let index = leer('index.html');
+let index = leer('fuente/sitio.html');
 index = reemplazar(index, 'publicaciones', pubs.map(bloquePublicacion).join('\n'));
 index = reemplazar(index, 'predicciones', filasPredicciones());
 index = reemplazar(index, 'monitor', estudios.map(tarjetaEstudio).join('\n\n'));
@@ -147,13 +149,20 @@ index = reemplazar(index, 'portada', portada());
   const alt = (pubs.length + k) % 2 === 1;
   index = index.replace(new RegExp(`<section class="sec( sec-alt)?" aria-labelledby="t-${id}">`), `<section class="${alt ? 'sec sec-alt' : 'sec'}" aria-labelledby="t-${id}">`);
 });
-escribir('index.html', index);
 
 /* ---------- páginas de artículo ---------- */
 const i0 = index.lastIndexOf('<style>', index.indexOf('/* Layout'));
 const cssSitio = index.slice(i0, index.indexOf('</style>', i0) + 8);
-const cabecera = index.slice(index.indexOf('<header class="top">'), index.indexOf('</header>') + 9).replace(/href="#/g, 'href="../#');
-const pie = index.slice(index.indexOf('<footer class="foot">'), index.indexOf('</footer>') + 9).replace(/href="#/g, 'href="../#');
+// Cada sección del sitio es una página propia; los enlaces internos #seccion apuntan a ella.
+const SECCIONES = [
+  ['inicio', 'Inicio', '/'], ['metodo', 'Método', '/metodo.html'], ['publicaciones', 'Publicaciones', '/publicaciones.html'],
+  ['monitor', 'Monitor económico', '/monitor.html'], ['etica', 'Código ético', '/etica.html'], ['equipo', 'Equipo', '/equipo.html'],
+  ['aportes', 'Aportes y contacto', '/aportes.html'],
+];
+const RUTA = Object.fromEntries(SECCIONES.map(([v, , r]) => [v, r]));
+const enlaces = (html) => html.replace(/href="#([a-z]+)"/g, (m, v) => (RUTA[v] ? `href="${RUTA[v]}"` : m));
+const cabecera = enlaces(index.slice(index.indexOf('<header class="top">'), index.indexOf('</header>') + 9));
+const pie = enlaces(index.slice(index.indexOf('<footer class="foot">'), index.indexOf('</footer>') + 9));
 const cssArticulo = leer('scripts/articulo.css');
 // Hoja de estilos compartida por las páginas de artículo: se descarga una vez y queda en caché.
 const cssPagina = cssSitio.replace(/^<style>\n?/, '').replace(/<\/style>$/, '') + '\n' + cssArticulo;
@@ -188,7 +197,7 @@ function jsonLdArticulo(p, url, descripcion) {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Lo Común', item: `${SITIO}/` },
-      { '@type': 'ListItem', position: 2, name: 'Publicaciones', item: `${SITIO}/#publicaciones` },
+      { '@type': 'ListItem', position: 2, name: 'Publicaciones', item: `${SITIO}/publicaciones.html` },
       { '@type': 'ListItem', position: 3, name: textoPlano(p.titulo_corto || p.titulo), item: url },
     ],
   };
@@ -259,7 +268,7 @@ ${filas.map(([k, v]) => `          <div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).
         </dl></div>
       </aside>
 ${vecinos.join('\n')}
-      <a class="btn btn-ink" href="../#publicaciones" style="justify-self:start">Volver a Publicaciones <span class="arrow">→</span></a>
+      <a class="btn btn-ink" href="/publicaciones.html" style="justify-self:start">Volver a Publicaciones <span class="arrow">→</span></a>
     </div>
   </div></section>
 </main>
@@ -271,6 +280,62 @@ ${pie}
 }
 fs.mkdirSync(path.join(RAIZ, 'analisis'), { recursive: true });
 pubs.forEach((p) => escribir(`analisis/${p.slug}.html`, pagina(p)));
+
+
+/* ---------- páginas por sección ---------- */
+// Recorta el texto a una descripción breve: la primera oración si cabe; si no, hasta la última palabra completa.
+function breve(t, max = 158) {
+  const x = textoPlano(t);
+  const m = x.match(/^.+?\.(?=\s|$)/);
+  if (m && m[0].length <= max) return m[0];
+  if (x.length <= max) return x;
+  return x.slice(0, x.lastIndexOf(' ', max - 1)).replace(/[,;:]$/, '') + '…';
+}
+const iniciosVista = SECCIONES.map(([v]) => index.indexOf(`<section class="view" id="v-${v}"`));
+const finMain = index.indexOf('</main>');
+const vista = (k) => index.slice(iniciosVista[k], k + 1 < SECCIONES.length ? iniciosVista[k + 1] : finMain).replace(/\n*<!-- =+ [^>]*=+ -->\n*$/, '\n');
+function paginaSeccion(k) {
+  const [v, etiqueta, ruta] = SECCIONES[k];
+  const url = `${SITIO}${ruta}`;
+  const cuerpo = vista(k).replace(/(<section class="view"[^>]*?) hidden>/, '$1>');
+  const h1 = textoPlano((cuerpo.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || etiqueta);
+  const lead = (cuerpo.match(/<p class="lead"[^>]*>([\s\S]*?)<\/p>/) || cuerpo.match(/<p[^>]*>([\s\S]*?)<\/p>/) || [])[1] || '';
+  let html = index.slice(0, index.indexOf('<main>') + 6) + '\n' + cuerpo + index.slice(finMain);
+  if (v !== 'inicio') {
+    const h = h1.replace(/\.$/, '');
+    const titulo = `${etiqueta}: ${h[0].toLowerCase()}${h.slice(1)}`;
+    const tituloCompleto = /Lo Común/.test(titulo) ? titulo : `${titulo} · Lo Común`;
+    const desc = breve(lead);
+    const ld = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'WebPage', '@id': url, url, name: titulo, description: desc, inLanguage: 'es-CL',
+          isPartOf: { '@id': `${SITIO}/#sitio` }, publisher: { '@id': `${SITIO}/#organizacion` } },
+        { '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Lo Común', item: `${SITIO}/` },
+          { '@type': 'ListItem', position: 2, name: etiqueta, item: url },
+        ] },
+      ],
+    };
+    html = html
+      .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(tituloCompleto)}</title>`)
+      .replace(/(<meta name="description" content=")[^"]*/, `$1${esc(desc)}`)
+      .replace(/(<link rel="canonical" href=")[^"]*/, `$1${url}`)
+      .replace(/(<meta property="og:url" content=")[^"]*/, `$1${url}`)
+      .replace(/(<meta property="og:title" content=")[^"]*/, `$1${esc(titulo)}`)
+      .replace(/(<meta property="og:description" content=")[^"]*/, `$1${esc(desc)}`)
+      .replace(/(<meta name="twitter:title" content=")[^"]*/, `$1${esc(titulo)}`)
+      .replace(/(<meta name="twitter:description" content=")[^"]*/, `$1${esc(desc)}`)
+      .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`);
+  } else {
+    // Los enlaces antiguos con ancla (locomun.cl/#metodo) llevan a la página de la sección.
+    const mapa = JSON.stringify(Object.fromEntries(SECCIONES.slice(1).map(([s, , r]) => [s, r])));
+    html = html.replace('</title>', `</title>\n<script>(function(){var r=${mapa},h=location.hash.slice(1);if(r[h])location.replace(r[h]);})();</script>`);
+  }
+  html = enlaces(html).replace(`<a href="${ruta}">`, `<a href="${ruta}" aria-current="page">`);
+  return html;
+}
+SECCIONES.forEach(([v, , ruta], k) => escribir(v === 'inicio' ? 'index.html' : ruta.slice(1), paginaSeccion(k)));
 
 /* ---------- feed compartido (lo lee Urgencias Kast) ---------- */
 const feedRuta = 'contenido/feed.json';
@@ -295,7 +360,10 @@ if (sinFecha(feed) !== sinFecha(feedPrevio)) escribir(feedRuta, JSON.stringify(f
 
 /* ---------- sitemap.xml y llms.txt ---------- */
 const propias = pubs.filter((p) => !(p.original && p.original.url));
-const urlsMapa = [`  <url><loc>${SITIO}/</loc><lastmod>${(pubs[0] && pubs[0].fecha) || hoy}</lastmod><priority>1.0</priority></url>`]
+const ultimaPub = (pubs[0] && pubs[0].fecha) || hoy;
+const ultimoEst = (estudios[0] && estudios[0].fecha) || ultimaPub;
+const urlsMapa = [`  <url><loc>${SITIO}/</loc><lastmod>${ultimaPub}</lastmod><priority>1.0</priority></url>`]
+  .concat(SECCIONES.slice(1).map(([v, , r]) => `  <url><loc>${SITIO}${r}</loc>${v === 'publicaciones' ? `<lastmod>${ultimaPub}</lastmod>` : v === 'monitor' ? `<lastmod>${ultimoEst}</lastmod>` : ''}<priority>0.9</priority></url>`))
   .concat(propias.map((p) => `  <url><loc>${urlPropia(p)}</loc><lastmod>${esc(p.fecha_modificacion || p.fecha)}</lastmod><priority>0.8</priority></url>`));
 escribir('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlsMapa.join('\n')}\n</urlset>\n`);
 
@@ -313,12 +381,12 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 ## Secciones del sitio
 
 - [Inicio](${SITIO}/): tesis, diagnósticos, funciones y condiciones de una acción comunicativa correcta.
-- [Método](${SITIO}/#metodo): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
-- [Publicaciones](${SITIO}/#publicaciones): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
-- [Monitor económico](${SITIO}/#monitor): estudios de mercado de materias que discute el Congreso.
-- [Código ético](${SITIO}/#etica): reglas de trabajo verificables, compromisos con clientes y límites.
-- [Equipo](${SITIO}/#equipo): biografías de los codirectores.
-- [Aportes y contacto](${SITIO}/#aportes): encargos, aportes de autores y aportes voluntarios.
+- [Método](${SITIO}/metodo.html): cómo se convierte un concepto teórico en una herramienta; quince herramientas y cuatro secuencias de aplicación.
+- [Publicaciones](${SITIO}/publicaciones.html): serie Prueba pública, registro público de predicciones, protocolo de aportes e índice de coherencia.
+- [Monitor económico](${SITIO}/monitor.html): estudios de mercado de materias que discute el Congreso.
+- [Código ético](${SITIO}/etica.html): reglas de trabajo verificables, compromisos con clientes y límites.
+- [Equipo](${SITIO}/equipo.html): biografías de los codirectores.
+- [Aportes y contacto](${SITIO}/aportes.html): encargos, aportes de autores y aportes voluntarios.
 
 ## Publicaciones
 

@@ -2,7 +2,8 @@
 
 Sitio de Lo Común: Laboratorio de Relato y Producción Narrativa. Página estática para GitHub Pages.
 
-- `index.html`: sitio completo; las secciones se muestran por ancla (`#metodo`, `#publicaciones`, `#monitor`, `#etica`, `#equipo`, `#aportes`).
+- `fuente/sitio.html`: fuente del sitio, con todas las secciones en un solo archivo. Los cambios de texto del sitio se hacen aquí.
+- `index.html`, `metodo.html`, `publicaciones.html`, `monitor.html`, `etica.html`, `equipo.html` y `aportes.html`: una página por sección, generadas desde `fuente/sitio.html`; no se editan a mano. Los enlaces antiguos con ancla (`locomun.cl/#metodo`) llevan a la página de la sección.
 - `img/`: fotografías de Wikimedia Commons (créditos y licencias en el pie del sitio).
 
 Contenido bajo licencia CC BY-SA 4.0.
@@ -22,6 +23,6 @@ Las publicaciones y los estudios del Monitor viven como datos en `contenido/`:
 - `contenido/publicaciones/<slug>.json`: ficha de cada artículo (título, bajada, ficha epistémica, predicciones). Su texto está en `<slug>.html`.
 - `contenido/monitor/<slug>.json`: tarjeta de cada estudio (resumen, cifras, enlace al Google Site).
 
-`node scripts/construir.mjs` regenera desde esos datos los bloques marcados `<!-- auto:... -->` de `index.html`, las páginas `analisis/<slug>.html` y `contenido/feed.json`. Una acción de GitHub lo ejecuta en cada cambio de `contenido/`, de modo que el panel de Lo Común solo escribe datos. No edite a mano lo que está entre los marcadores: se sobrescribe.
+`node scripts/construir.mjs` regenera desde esos datos los bloques marcados `<!-- auto:... -->` de `fuente/sitio.html`, la portada y las páginas de cada sección, las páginas `analisis/<slug>.html` y `contenido/feed.json`. Una acción de GitHub lo ejecuta en cada cambio de `contenido/`, de modo que el panel de Lo Común solo escribe datos. No edite a mano lo que está entre los marcadores: se sobrescribe.
 
 Para retirar una publicación o un estudio sin borrarlo, agregue `"retirado": true` a su archivo.
