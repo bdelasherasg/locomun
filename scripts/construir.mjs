@@ -68,7 +68,7 @@ ${parrafos(p).map((x) => `          <p>${rico(x)}</p>`).join('\n')}
         </div>
         <a class="btn btn-ink" href="analisis/${p.slug}.html" style="justify-self:start">Leer el artículo completo <span class="arrow">→</span></a>
       </div>
-      <aside class="ficha" aria-label="Ficha epistémica">
+      <aside class="ficha" aria-label="Ficha epistémica: ${esc(p.titulo)}">
         <div class="ficha-h"><span>Ficha epistémica</span><span>${esc(numeroTexto(p))}</span></div>
         <div class="ficha-b">
           <dl class="kv">
@@ -248,8 +248,9 @@ function pagina(p) {
 <script src="../analitica.js" defer></script>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 ${cabecera}
-<main>
+<main id="contenido" tabindex="-1">
   <div class="art-head"><div class="wrap">
     <span class="crumb">${esc(p.serie ? `Serie ${p.serie} · ${numeroTexto(p)}` : p.clase)}</span>
     <h1>${esc(p.titulo)}</h1>
@@ -261,7 +262,7 @@ ${cabecera}
       ${cuerpo.trim()}
     </article>
     <div class="aside-sticky">
-      <aside class="ficha" aria-label="Ficha epistémica">
+      <aside class="ficha" aria-label="Ficha epistémica: ${esc(p.titulo)}">
         <div class="ficha-h"><span>Ficha epistémica</span><span>${esc(numeroTexto(p))}</span></div>
         <div class="ficha-b"><dl class="kv">
 ${filas.map(([k, v]) => `          <div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('\n')}
@@ -300,7 +301,8 @@ function paginaSeccion(k) {
   const cuerpo = vista(k).replace(/(<section class="view"[^>]*?) hidden>/, '$1>');
   const h1 = textoPlano((cuerpo.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || etiqueta);
   const lead = (cuerpo.match(/<p class="lead"[^>]*>([\s\S]*?)<\/p>/) || cuerpo.match(/<p[^>]*>([\s\S]*?)<\/p>/) || [])[1] || '';
-  let html = index.slice(0, index.indexOf('<main>') + 6) + '\n' + cuerpo + index.slice(finMain);
+  const inicioMain = index.indexOf('>', index.indexOf('<main')) + 1;
+  let html = index.slice(0, inicioMain) + '\n' + cuerpo + index.slice(finMain);
   if (v !== 'inicio') {
     const h = h1.replace(/\.$/, '');
     const titulo = `${etiqueta}: ${h[0].toLowerCase()}${h.slice(1)}`;
