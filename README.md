@@ -3,7 +3,7 @@
 Sitio de Lo Común: Laboratorio de Relato y Producción Narrativa. Página estática para GitHub Pages.
 
 - `fuente/sitio.html`: fuente del sitio, con todas las secciones en un solo archivo. Los cambios de texto del sitio se hacen aquí.
-- `index.html`, `metodo.html`, `publicaciones.html`, `monitor.html`, `etica.html`, `equipo.html` y `aportes.html`: una página por sección, generadas desde `fuente/sitio.html`; no se editan a mano. Los enlaces antiguos con ancla (`locomun.cl/#metodo`) llevan a la página de la sección.
+- `index.html`, `metodo.html`, `publicaciones.html`, `monitor.html`, `etica.html`, `equipo.html`, `aportes.html` y `privacidad.html`: una página por sección, generadas desde `fuente/sitio.html`; no se editan a mano. Los enlaces antiguos con ancla (`locomun.cl/#metodo`) llevan a la página de la sección.
 - `img/`: fotografías de Wikimedia Commons (créditos y licencias en el pie del sitio).
 
 Contenido bajo licencia CC BY-SA 4.0.

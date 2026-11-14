@@ -157,7 +157,7 @@ const cssSitio = index.slice(i0, index.indexOf('</style>', i0) + 8);
 const SECCIONES = [
   ['inicio', 'Inicio', '/'], ['metodo', 'Método', '/metodo.html'], ['publicaciones', 'Publicaciones', '/publicaciones.html'],
   ['monitor', 'Monitor económico', '/monitor.html'], ['etica', 'Código ético', '/etica.html'], ['equipo', 'Equipo', '/equipo.html'],
-  ['aportes', 'Aportes y contacto', '/aportes.html'],
+  ['aportes', 'Aportes y contacto', '/aportes.html'], ['privacidad', 'Privacidad y datos personales', '/privacidad.html'],
 ];
 const RUTA = Object.fromEntries(SECCIONES.map(([v, , r]) => [v, r]));
 const enlaces = (html) => html.replace(/href="#([a-z]+)"/g, (m, v) => (RUTA[v] ? `href="${RUTA[v]}"` : m));
@@ -389,6 +389,7 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 - [Código ético](${SITIO}/etica.html): reglas de trabajo verificables, compromisos con clientes y límites.
 - [Equipo](${SITIO}/equipo.html): biografías de los codirectores.
 - [Aportes y contacto](${SITIO}/aportes.html): encargos, aportes de autores y aportes voluntarios.
+- [Privacidad y datos personales](${SITIO}/privacidad.html): qué datos personales se guardan, dónde, con qué servicios y cómo pedir su borrado.
 
 ## Publicaciones
 
