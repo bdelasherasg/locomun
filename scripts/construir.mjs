@@ -175,6 +175,21 @@ const versionCss = crypto.createHash('sha1').update(cssPagina).digest('hex').sli
 const SITIO = 'https://locomun.cl';
 const textoPlano = (t) => String(t == null ? '' : t).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 // Una publicación con "original" declara como canónica la URL donde apareció primero.
+// Codirectores: se leen de la sección Equipo de fuente/sitio.html (nombre y párrafo de funciones), sin texto nuevo.
+const slugNombre = (t) => textoPlano(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const PERSONAS = [...index.matchAll(/<article class="persona">([\s\S]*?)<\/article>/g)].map((m) => {
+  const nombre = textoPlano((m[1].match(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/) || [])[1] || '');
+  const cargo = textoPlano((m[1].match(/<span class="cargo">([\s\S]*?)<\/span>/) || [])[1] || '');
+  const funciones = textoPlano(([...m[1].matchAll(/<p>([\s\S]*?)<\/p>/g)].map((x) => x[1]).find((x) => /^En Lo Común/.test(textoPlano(x)))) || '');
+  return { nombre, cargo, funciones, slug: slugNombre(nombre) };
+}).filter((x) => x.nombre);
+index = index.replace(/<article class="persona">([\s\S]*?)<\/article>/g, (todo, dentro) => {
+  const nombre = textoPlano((dentro.match(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/) || [])[1] || '');
+  return nombre ? `<article class="persona" id="${slugNombre(nombre)}">${dentro}</article>` : todo;
+});
+const idPersona = (nombre) => { const x = PERSONAS.find((q) => q.nombre === textoPlano(nombre)); return x ? `${SITIO}/equipo.html#${x.slug}` : null; };
+const ldPersona = (x) => ({ '@type': 'Person', '@id': `${SITIO}/equipo.html#${x.slug}`, name: x.nombre, url: `${SITIO}/equipo.html#${x.slug}`,
+  jobTitle: x.cargo, ...(x.funciones ? { description: x.funciones } : {}), worksFor: { '@id': `${SITIO}/#organizacion` } });
 const urlPropia = (p) => `${SITIO}/analisis/${p.slug}.html`;
 const urlDePagina = (p) => (p.original && p.original.url ? p.original.url : urlPropia(p));
 function jsonLdArticulo(p, url, descripcion) {
@@ -186,7 +201,7 @@ function jsonLdArticulo(p, url, descripcion) {
     inLanguage: 'es-CL',
     datePublished: p.fecha,
     dateModified: p.fecha_modificacion || p.fecha,
-    author: { '@type': 'Person', name: p.autor, ...(p.cargo_autor ? { jobTitle: p.cargo_autor } : {}) },
+    author: { '@type': 'Person', ...(idPersona(p.autor) ? { '@id': idPersona(p.autor), url: idPersona(p.autor) } : {}), name: p.autor, ...(p.cargo_autor ? { jobTitle: p.cargo_autor } : {}) },
     publisher: { '@type': 'Organization', '@id': `${SITIO}/#organizacion`, name: 'Lo Común', url: `${SITIO}/` },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     image: `${SITIO}/img/salon.jpg`,
@@ -313,6 +328,7 @@ function paginaSeccion(k) {
       '@graph': [
         { '@type': 'WebPage', '@id': url, url, name: titulo, description: desc, inLanguage: 'es-CL',
           isPartOf: { '@id': `${SITIO}/#sitio` }, publisher: { '@id': `${SITIO}/#organizacion` } },
+        ...(v === 'equipo' ? PERSONAS.map(ldPersona) : []),
         { '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Lo Común', item: `${SITIO}/` },
           { '@type': 'ListItem', position: 2, name: etiqueta, item: url },
@@ -403,11 +419,31 @@ ${estudios.map(lineaEst).join('\n')}
 
 - [Urgencias Kast](https://urgenciaskast.cl/): seguimiento gratuito de los proyectos con urgencia del Ejecutivo y de la agenda legislativa de dos semanas, con fichas por proyecto.
 
+## Texto completo
+
+- [llms-full.txt](${SITIO}/llms-full.txt): texto completo de las secciones y de las publicaciones.
+
 ## Contacto y licencia
 
 - Correo: contacto@locomun.cl
 - Licencia de la producción pública: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 `;
 escribir('llms.txt', llms);
+
+// llms-full.txt: el texto completo del sitio y de las publicaciones propias, en un solo archivo para agentes de IA.
+const textoBloques = (html) => html.replace(/<(script|style|svg)[\s\S]*?<\/\1>/g, '')
+  .replace(/<\/(p|li|h[1-6]|dt|dd|tr|blockquote|figcaption)>/g, '\n').replace(/<br\s*\/?>/g, '\n')
+  .replace(/<h([1-6])[^>]*>/g, (m, n) => '\n' + '#'.repeat(Math.min(+n + 1, 6)) + ' ')
+  .replace(/<li[^>]*>/g, '- ').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+  .split('\n').map((l) => l.replace(/[ \t]+/g, ' ').trim()).filter(Boolean).join('\n');
+const seccionesFull = SECCIONES.map(([, etiqueta, r], k) => `## ${etiqueta}\n\nURL: ${SITIO}${r}\n\n${textoBloques(vista(k))}`).join('\n\n');
+const pubsFull = pubs.map((p) => {
+  const cuerpo = fs.existsSync(path.join(RAIZ, `contenido/publicaciones/${p.slug}.html`)) ? leer(`contenido/publicaciones/${p.slug}.html`) : '';
+  const datos = [['Autor', p.autor], ['Fecha', fechaTexto(p.fecha)], ['Clase', p.clase], p.serie ? ['Serie', `${p.serie} ${numeroTexto(p)}`] : null,
+    ['Marco declarado', p.marco], ['Fuentes', p.fuentes], ['Condición de refutación', p.condicion], ['Revisión', p.revision], ['URL', urlDePagina(p)]]
+    .filter((x) => x && x[1]).map(([k, v]) => `- ${k}: ${textoPlano(v)}`).join('\n');
+  return `## ${textoPlano(p.titulo)}\n\n${datos}\n\n${p.bajada ? textoPlano(p.bajada) + '\n\n' : ''}${textoBloques(cuerpo)}`;
+}).join('\n\n');
+escribir('llms-full.txt', `# Lo Común: texto completo\n\n> Texto completo de locomun.cl para lectura por agentes de IA. Índice breve en ${SITIO}/llms.txt. Licencia CC BY-SA 4.0.\n\n# Secciones del sitio\n\n${seccionesFull}\n\n# Publicaciones\n\n${pubsFull}\n`);
 
 console.log(`Construido: ${pubs.length} publicaciones, ${estudios.length} estudios.`);

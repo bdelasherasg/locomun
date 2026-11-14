@@ -34,6 +34,10 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 
 - [Urgencias Kast](https://urgenciaskast.cl/): seguimiento gratuito de los proyectos con urgencia del Ejecutivo y de la agenda legislativa de dos semanas, con fichas por proyecto.
 
+## Texto completo
+
+- [llms-full.txt](https://locomun.cl/llms-full.txt): texto completo de las secciones y de las publicaciones.
+
 ## Contacto y licencia
 
 - Correo: contacto@locomun.cl
