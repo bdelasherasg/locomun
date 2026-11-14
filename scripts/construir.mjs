@@ -206,6 +206,7 @@ function jsonLdArticulo(p, url, descripcion) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     image: `${SITIO}/img/salon.jpg`,
     license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    ...(p.doi ? { identifier: { '@type': 'PropertyValue', propertyID: 'DOI', value: p.doi }, sameAs: `https://doi.org/${p.doi}` } : {}),
     ...(p.serie ? { isPartOf: { '@type': 'CreativeWorkSeries', name: p.serie } } : {}),
   };
   const migas = {
@@ -230,6 +231,7 @@ function pagina(p) {
     ['Publicación', p.original ? `${fechaTexto(p.fecha)}, originalmente en <a href="${esc(p.original.url)}" target="_blank" rel="noopener">${esc(p.original.sitio)}</a>` : esc(fechaTexto(p.fecha))],
     ['Marco declarado', esc(p.marco)], ['Fuentes', esc(p.fuentes)], ['Condición de refutación', esc(p.condicion)],
     ['Conflictos', esc(p.conflictos)], ['Revisión', esc(p.revision)], ['Licencia', 'CC BY-SA 4.0'],
+    p.doi ? ['DOI', `<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.doi)}</a>`] : null,
   ].filter((x) => x && x[1]).map(([k, v]) => [k, k === 'Serie' || k === 'Clase' || k === 'Autor' ? esc(v) : v]);
   const tituloPagina = p.serie ? `${p.serie} ${numeroTexto(p)}: ${p.titulo_corto || p.titulo}` : (p.titulo_corto || p.titulo);
   const descripcion = textoPlano(p.resumen_portada || p.bajada || p.titulo);
@@ -440,7 +442,7 @@ const seccionesFull = SECCIONES.map(([, etiqueta, r], k) => `## ${etiqueta}\n\nU
 const pubsFull = pubs.map((p) => {
   const cuerpo = fs.existsSync(path.join(RAIZ, `contenido/publicaciones/${p.slug}.html`)) ? leer(`contenido/publicaciones/${p.slug}.html`) : '';
   const datos = [['Autor', p.autor], ['Fecha', fechaTexto(p.fecha)], ['Clase', p.clase], p.serie ? ['Serie', `${p.serie} ${numeroTexto(p)}`] : null,
-    ['Marco declarado', p.marco], ['Fuentes', p.fuentes], ['Condición de refutación', p.condicion], ['Revisión', p.revision], ['URL', urlDePagina(p)]]
+    ['Marco declarado', p.marco], ['Fuentes', p.fuentes], ['Condición de refutación', p.condicion], ['Revisión', p.revision], p.doi ? ['DOI', 'https://doi.org/' + p.doi] : null, ['URL', urlDePagina(p)]]
     .filter((x) => x && x[1]).map(([k, v]) => `- ${k}: ${textoPlano(v)}`).join('\n');
   return `## ${textoPlano(p.titulo)}\n\n${datos}\n\n${p.bajada ? textoPlano(p.bajada) + '\n\n' : ''}${textoBloques(cuerpo)}`;
 }).join('\n\n');
