@@ -13,6 +13,7 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 - [Código ético](https://locomun.cl/etica.html): reglas de trabajo verificables, compromisos con clientes y límites.
 - [Equipo](https://locomun.cl/equipo.html): biografías de los codirectores.
 - [Aportes y contacto](https://locomun.cl/aportes.html): encargos, aportes de autores y aportes voluntarios.
+- [Privacidad y datos personales](https://locomun.cl/privacidad.html): qué datos personales se guardan, dónde, con qué servicios y cómo pedir su borrado.
 
 ## Publicaciones
 

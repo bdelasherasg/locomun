@@ -220,6 +220,12 @@ p{margin:0}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .e-inm{color:#f08a6c}}
 
 /* Tablas */
+.prosa-priv{max-width:860px;display:grid;gap:18px}
+.prosa-priv h2{font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.2}
+.prosa-priv p,.prosa-priv li{color:var(--fg-2);line-height:1.65}
+.prosa-priv ul{margin:0;padding-left:1.2em;display:grid;gap:10px}
+.prosa-priv b{color:var(--fg)}
+.prosa-priv a{text-decoration:underline}
 .tbl-wrap{overflow-x:auto;border-top:2px solid var(--fg)}
 table{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem}
 th{text-align:left;font:600 .64rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--fg-3);padding:14px 16px 12px 0;border-bottom:1px solid var(--line)}
@@ -413,7 +419,7 @@ main:focus{outline:none}
           <input id="fc-autoriza" name="autoriza" type="checkbox" required aria-required="true" aria-describedby="fc-privacidad">
           <label for="fc-autoriza">Autorizo que Lo Común use estos datos solo para responder este mensaje. <span aria-hidden="true">*</span></label>
         </div>
-        <p class="ayuda" id="fc-privacidad">Sus datos no se publican ni se comparten. Se eliminan cuando ya no los necesitamos y, a más tardar, un año después de recibidos. Puede pedir verlos, corregirlos o eliminarlos con este mismo formulario o en contacto@locomun.cl.</p>
+        <p class="ayuda" id="fc-privacidad">Sus datos no se publican ni se comparten. Se eliminan cuando ya no los necesitamos y, a más tardar, un año después de recibidos. Puede pedir verlos, corregirlos o eliminarlos con este mismo formulario o en contacto@locomun.cl. Más detalles en <a href="/privacidad.html">Privacidad y datos personales</a>.</p>
         <div class="form-error" id="fc-error" role="alert"></div>
         <button class="btn btn-ink" type="submit" id="fc-enviar">Enviar mensaje</button>
       </form>
@@ -432,7 +438,7 @@ main:focus{outline:none}
         </a>
         <p class="full">Lo Común: Laboratorio de Relato y Producción Narrativa</p>
       </div>
-      <div><h2>Secciones</h2><ul><li><a href="/metodo.html">Método</a></li><li><a href="/publicaciones.html">Publicaciones</a></li><li><a href="/monitor.html">Monitor económico</a></li><li><a href="/etica.html">Código ético</a></li><li><a href="/equipo.html">Equipo</a></li></ul></div>
+      <div><h2>Secciones</h2><ul><li><a href="/metodo.html">Método</a></li><li><a href="/publicaciones.html">Publicaciones</a></li><li><a href="/monitor.html">Monitor económico</a></li><li><a href="/etica.html">Código ético</a></li><li><a href="/equipo.html">Equipo</a></li><li><a href="/privacidad.html">Privacidad y datos personales</a></li></ul></div>
       <div><h2>Productos</h2><ul><li><a href="https://urgenciaskast.cl/" target="_blank" rel="noopener">Urgencias Kast</a></li><li><a href="/publicaciones.html">Serie Prueba pública</a></li><li><a href="/aportes.html">Contacto y aportes</a></li></ul></div>
     </div>
     <div class="foot-bottom">
