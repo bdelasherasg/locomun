@@ -381,7 +381,7 @@ main:focus{outline:none}
       <tr><td><b>Formulario de contacto</b> (locomun.cl y urgenciaskast.cl)</td><td>Nombre, correo electrónico, organización o cargo (si lo indica) y el texto de su mensaje.</td><td>Solo para responder su mensaje.</td></tr>
       <tr><td><b>Correos que usted nos escribe</b> (a las casillas de locomun.cl) y los que le respondemos</td><td>Nombre, correo electrónico y el texto de los mensajes.</td><td>Para responderle y seguir la conversación.</td></tr>
 <tr><td><b>Pedido de análisis ampliado</b> (fichas de urgenciaskast.cl)</td><td>Nombre, correo electrónico y el proyecto de ley por el que pregunta.</td><td>Solo para avisarle por correo cuando el análisis esté publicado, o para explicarle que no se pudo hacer.</td></tr>
-      <tr><td><b>Boletín de novedades</b> (casilla opcional del pedido)</td><td>Correo electrónico.</td><td>Para enviarle novedades de Urgencias Kast y de Lo Común, solo si marcó la casilla.</td></tr>
+      <tr><td><b>Novedades por correo</b> (casilla opcional de los formularios)</td><td>Correo electrónico, nombre y el sitio donde se suscribió.</td><td>Para enviarle novedades de Urgencias Kast y de Lo Común, solo si marcó la casilla. Cada correo trae un enlace para darse de baja.</td></tr>
       <tr><td><b>Medición de visitas</b> (solo si usted la acepta)</td><td>Datos de navegación que recoge Google Analytics: páginas visitadas, tipo de dispositivo y ubicación aproximada.</td><td>Para saber cuántas personas visitan el sitio y qué páginas leen.</td></tr>
       </tbody></table></div>
       <p>No pedimos datos sensibles. Le pedimos que no los incluya en sus mensajes.</p>
@@ -431,7 +431,7 @@ main:focus{outline:none}
       <li><b>Mensajes de contacto:</b> hasta que ya no los necesitemos para responderle y, como máximo, un año desde que los recibimos.</li>
       <li><b>Correos que intercambiamos:</b> hasta un año después del último mensaje de la conversación.</li>
 <li><b>Pedidos de análisis ampliado:</b> como máximo, un año desde que los recibimos. Puede pedir que los borremos antes.</li>
-      <li><b>Boletín de novedades:</b> si marcó la casilla, guardamos su nombre y su correo hasta que usted pida salir de la lista.</li>
+      <li><b>Novedades por correo:</b> si marcó la casilla, guardamos su nombre y su correo hasta que se dé de baja. La baja es inmediata, con el enlace que trae cada correo, y borra sus datos de la lista.</li>
       </ul>
     </div>
   </section>
@@ -444,7 +444,7 @@ main:focus{outline:none}
       <li><b>Ver</b> qué datos suyos tenemos.</li>
       <li><b>Corregirlos</b> si están equivocados o incompletos.</li>
       <li><b>Borrarlos</b> de forma definitiva.</li>
-      <li><b>Retirar su autorización</b> u oponerse a un uso, por ejemplo salir del boletín de novedades.</li>
+      <li><b>Retirar su autorización</b> u oponerse a un uso, por ejemplo dejar de recibir las novedades.</li>
       <li><b>Recibir una copia</b> de sus datos en un formato de uso común.</li>
       </ul>
       <p>Para hacerlo, escriba a <a href="mailto:contacto@locomun.cl">contacto@locomun.cl</a> desde el correo que nos dio, o use el formulario de contacto con el motivo «Acceso, corrección o eliminación de mis datos personales». Respondemos dentro de 30 días.</p>
@@ -517,7 +517,7 @@ main:focus{outline:none}
     var faltan=revisar();
     if(faltan.length){err.textContent='Falta completar: '+faltan.join(', ')+'.';var p=f.querySelector('[aria-invalid=true]');if(p)p.focus();return;}
     btn.disabled=true; btn.textContent='Enviando…';
-    fetch(URL_CONTACTO,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tipo:f.tipo.value,nombre:f.nombre.value,correo:f.correo.value,organizacion:f.organizacion.value,mensaje:f.mensaje.value,autoriza:f.autoriza.checked,pagina:location.pathname,sitio_web:f.sitio_web.value,ms:Date.now()-inicio})})
+    fetch(URL_CONTACTO,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tipo:f.tipo.value,nombre:f.nombre.value,correo:f.correo.value,organizacion:f.organizacion.value,mensaje:f.mensaje.value,autoriza:f.autoriza.checked,novedades:f.novedades.checked,pagina:location.pathname,sitio_web:f.sitio_web.value,ms:Date.now()-inicio})})
       .then(function(r){return r.json().catch(function(){return {};}).then(function(d){if(!r.ok)throw new Error(d.error||'No pudimos enviar su mensaje.');return d;});})
       .then(function(){
         var ok=document.createElement('div'); ok.className='form-ok';

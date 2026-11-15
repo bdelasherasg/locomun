@@ -465,7 +465,7 @@ main:focus{outline:none}
     var faltan=revisar();
     if(faltan.length){err.textContent='Falta completar: '+faltan.join(', ')+'.';var p=f.querySelector('[aria-invalid=true]');if(p)p.focus();return;}
     btn.disabled=true; btn.textContent='Enviando…';
-    fetch(URL_CONTACTO,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tipo:f.tipo.value,nombre:f.nombre.value,correo:f.correo.value,organizacion:f.organizacion.value,mensaje:f.mensaje.value,autoriza:f.autoriza.checked,pagina:location.pathname,sitio_web:f.sitio_web.value,ms:Date.now()-inicio})})
+    fetch(URL_CONTACTO,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tipo:f.tipo.value,nombre:f.nombre.value,correo:f.correo.value,organizacion:f.organizacion.value,mensaje:f.mensaje.value,autoriza:f.autoriza.checked,novedades:f.novedades.checked,pagina:location.pathname,sitio_web:f.sitio_web.value,ms:Date.now()-inicio})})
       .then(function(r){return r.json().catch(function(){return {};}).then(function(d){if(!r.ok)throw new Error(d.error||'No pudimos enviar su mensaje.');return d;});})
       .then(function(){
         var ok=document.createElement('div'); ok.className='form-ok';

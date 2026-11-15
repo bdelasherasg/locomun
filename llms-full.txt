@@ -542,6 +542,7 @@ Mensaje *
 Si pide una conversación, indique la materia y el plazo. Si envía un aporte, su tesis y el enlace al texto.
 No complete este campo
 Autorizo que Lo Común use estos datos solo para responder este mensaje. *
+Quiero recibir por correo las novedades de Lo Común y de Urgencias Kast. Puedo darme de baja cuando quiera. (Opcional)
 Sus datos no se publican ni se comparten. Se eliminan cuando ya no los necesitamos y, a más tardar, un año después de recibidos. Puede pedir verlos, corregirlos o eliminarlos con este mismo formulario o en contacto@locomun.cl. Más detalles en Privacidad y datos personales.
 Enviar mensaje
 
@@ -562,7 +563,7 @@ CuándoQué datosPara qué los usamos
 Formulario de contacto (locomun.cl y urgenciaskast.cl)Nombre, correo electrónico, organización o cargo (si lo indica) y el texto de su mensaje.Solo para responder su mensaje.
 Correos que usted nos escribe (a las casillas de locomun.cl) y los que le respondemosNombre, correo electrónico y el texto de los mensajes.Para responderle y seguir la conversación.
 Pedido de análisis ampliado (fichas de urgenciaskast.cl)Nombre, correo electrónico y el proyecto de ley por el que pregunta.Solo para avisarle por correo cuando el análisis esté publicado, o para explicarle que no se pudo hacer.
-Boletín de novedades (casilla opcional del pedido)Correo electrónico.Para enviarle novedades de Urgencias Kast y de Lo Común, solo si marcó la casilla.
+Novedades por correo (casilla opcional de los formularios)Correo electrónico, nombre y el sitio donde se suscribió.Para enviarle novedades de Urgencias Kast y de Lo Común, solo si marcó la casilla. Cada correo trae un enlace para darse de baja.
 Medición de visitas (solo si usted la acepta)Datos de navegación que recoge Google Analytics: páginas visitadas, tipo de dispositivo y ubicación aproximada.Para saber cuántas personas visitan el sitio y qué páginas leen.
 No pedimos datos sensibles. Le pedimos que no los incluya en sus mensajes.
 ### Dónde se guardan
@@ -585,13 +586,13 @@ Su elección se guarda en su propio navegador, no en nuestros servidores. Puede 
 - Mensajes de contacto: hasta que ya no los necesitemos para responderle y, como máximo, un año desde que los recibimos.
 - Correos que intercambiamos: hasta un año después del último mensaje de la conversación.
 - Pedidos de análisis ampliado: como máximo, un año desde que los recibimos. Puede pedir que los borremos antes.
-- Boletín de novedades: si marcó la casilla, guardamos su nombre y su correo hasta que usted pida salir de la lista.
+- Novedades por correo: si marcó la casilla, guardamos su nombre y su correo hasta que se dé de baja. La baja es inmediata, con el enlace que trae cada correo, y borra sus datos de la lista.
 ### Sus derechos y cómo pedir el borrado
 Usted puede pedir, sin costo:
 - Ver qué datos suyos tenemos.
 - Corregirlos si están equivocados o incompletos.
 - Borrarlos de forma definitiva.
-- Retirar su autorización u oponerse a un uso, por ejemplo salir del boletín de novedades.
+- Retirar su autorización u oponerse a un uso, por ejemplo dejar de recibir las novedades.
 - Recibir una copia de sus datos en un formato de uso común.
 Para hacerlo, escriba a contacto@locomun.cl desde el correo que nos dio, o use el formulario de contacto con el motivo «Acceso, corrección o eliminación de mis datos personales». Respondemos dentro de 30 días.
 Estos derechos están reconocidos en la Ley 19.628, sobre protección de la vida privada, y en la Ley 21.719, que la modifica y crea la Agencia de Protección de Datos Personales. Si considera que no respondimos bien su pedido, puede reclamar ante esa Agencia.
