@@ -231,7 +231,8 @@ function pagina(p) {
     ['Publicación', p.original ? `${fechaTexto(p.fecha)}, originalmente en <a href="${esc(p.original.url)}" target="_blank" rel="noopener">${esc(p.original.sitio)}</a>` : esc(fechaTexto(p.fecha))],
     ['Marco declarado', esc(p.marco)], ['Fuentes', esc(p.fuentes)], ['Condición de refutación', esc(p.condicion)],
     ['Conflictos', esc(p.conflictos)], ['Revisión', esc(p.revision)], ['Licencia', 'CC BY-SA 4.0'],
-    p.doi ? ['DOI', `<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.doi)}</a>`] : null,
+    // El código se corta con puntos suspensivos si no cabe en la ficha; completo queda en el enlace y al pasar el cursor.
+    p.doi ? ['DOI', `<a class="doi" href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener" title="DOI ${esc(p.doi)}" aria-label="DOI ${esc(p.doi)}">${esc(p.doi)}</a>`] : null,
   ].filter((x) => x && x[1]).map(([k, v]) => [k, k === 'Serie' || k === 'Clase' || k === 'Autor' ? esc(v) : v]);
   const tituloPagina = p.serie ? `${p.serie} ${numeroTexto(p)}: ${p.titulo_corto || p.titulo}` : (p.titulo_corto || p.titulo);
   const descripcion = textoPlano(p.resumen_portada || p.bajada || p.titulo);
