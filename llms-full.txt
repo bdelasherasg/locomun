@@ -560,12 +560,13 @@ Los sitios se pueden leer completos sin entregar ningún dato personal. Solo gua
 En todos los casos, la base para usar sus datos es la autorización que usted da al enviar el formulario. Puede retirarla cuando quiera.
 CuándoQué datosPara qué los usamos
 Formulario de contacto (locomun.cl y urgenciaskast.cl)Nombre, correo electrónico, organización o cargo (si lo indica) y el texto de su mensaje.Solo para responder su mensaje.
+Correos que usted nos escribe (a las casillas de locomun.cl) y los que le respondemosNombre, correo electrónico y el texto de los mensajes.Para responderle y seguir la conversación.
 Pedido de análisis ampliado (fichas de urgenciaskast.cl)Nombre, correo electrónico y el proyecto de ley por el que pregunta.Solo para avisarle por correo cuando el análisis esté publicado, o para explicarle que no se pudo hacer.
 Boletín de novedades (casilla opcional del pedido)Correo electrónico.Para enviarle novedades de Urgencias Kast y de Lo Común, solo si marcó la casilla.
 Medición de visitas (solo si usted la acepta)Datos de navegación que recoge Google Analytics: páginas visitadas, tipo de dispositivo y ubicación aproximada.Para saber cuántas personas visitan el sitio y qué páginas leen.
 No pedimos datos sensibles. Le pedimos que no los incluya en sus mensajes.
 ### Dónde se guardan
-- Mensajes de contacto y pedidos de análisis ampliado. Su nombre, su correo y su mensaje se guardan en una base de datos privada en la nube (Cloudflare), a la que solo entra el equipo de Lo Común con usuario y contraseña. La elegimos porque permite el borrado definitivo: cuando borramos sus datos, no queda copia ni historial. Además, se borran solos al cumplir un año.
+- Mensajes de contacto, correos y pedidos de análisis ampliado. Su nombre, su correo y sus mensajes se guardan en una base de datos privada en la nube (Cloudflare), a la que solo entra el equipo de Lo Común con usuario y contraseña. La elegimos porque permite el borrado definitivo: cuando borramos sus datos, no queda copia ni historial. Además, se borran solos al cumplir un año.
 - Registro de los pedidos. Fuera de esa base de datos solo queda un registro sin datos personales: el proyecto de ley pedido, la fecha y si el aviso ya se envió.
 - Avisos internos. Cuando llega un mensaje o un pedido, los dos codirectores de Lo Común reciben un aviso por correo (Gmail) con su contenido, para poder responder. Si usted pide eliminar sus datos, también borramos esos avisos.
 Sus datos nunca se publican en los sitios ni en sus archivos de datos abiertos.
@@ -574,7 +575,7 @@ No vendemos ni cedemos sus datos, y no los usamos para publicidad. Para funciona
 ServicioPara quéQué datos recibe
 CloudflareRecibe los formularios y guarda los mensajes de contacto y los datos de quienes piden un análisis ampliado.Los datos del formulario.
 GitHubAloja los sitios.Como todo servidor web, la dirección IP de quien visita el sitio. No recibe los datos de los formularios.
-ResendEnvía el correo automático que avisa que un análisis ampliado ya está publicado.Su nombre, su correo electrónico y el texto de ese aviso.
+ResendEnvía los correos que le escribimos, incluido el aviso de que un análisis ampliado ya está publicado.Su correo electrónico y el contenido de esos correos.
 Google (Gmail y Google Analytics)Correo del equipo y medición de visitas.Los avisos internos y las respuestas que le enviamos; los datos de navegación, solo si aceptó la medición.
 Estas empresas tienen servidores fuera de Chile, por lo que sus datos pueden guardarse o pasar por otros países, principalmente Estados Unidos.
 ### Medición de visitas y almacenamiento en su navegador
@@ -582,6 +583,7 @@ Google Analytics no se descarga ni se activa hasta que usted pulsa «Aceptar» e
 Su elección se guarda en su propio navegador, no en nuestros servidores. Puede cambiarla cuando quiera en «Preferencias de medición de visitas», al pie de cada página.
 ### Cuánto tiempo los guardamos
 - Mensajes de contacto: hasta que ya no los necesitemos para responderle y, como máximo, un año desde que los recibimos.
+- Correos que intercambiamos: hasta un año después del último mensaje de la conversación.
 - Pedidos de análisis ampliado: como máximo, un año desde que los recibimos. Puede pedir que los borremos antes.
 - Boletín de novedades: si marcó la casilla, guardamos su nombre y su correo hasta que usted pida salir de la lista.
 ### Sus derechos y cómo pedir el borrado
@@ -595,7 +597,7 @@ Para hacerlo, escriba a contacto@locomun.cl desde el correo que nos dio, o use e
 Estos derechos están reconocidos en la Ley 19.628, sobre protección de la vida privada, y en la Ley 21.719, que la modifica y crea la Agencia de Protección de Datos Personales. Si considera que no respondimos bien su pedido, puede reclamar ante esa Agencia.
 ### Cambios a esta política
 Si cambiamos los datos que pedimos, el uso que les damos o los servicios con que trabajamos, actualizaremos esta página y su fecha.
-Última actualización: 14 de noviembre de 2026.
+Última actualización: 15 de noviembre de 2026.
 
 # Publicaciones
 

@@ -170,7 +170,8 @@ p{margin:0}
 .kv{display:grid;gap:0;margin:4px 0 0;border-top:1px solid var(--line)}
 .kv div{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:12px;padding:9px 0;border-bottom:1px solid var(--line-2);font-size:.84rem}
 .kv dt{font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3);padding-top:3px}
-.kv dd{margin:0;color:var(--fg)}
+.kv dd{margin:0;color:var(--fg);min-width:0}
+.kv .doi{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:480px){.kv div{grid-template-columns:1fr;gap:2px}}
 .uka-vivo{display:grid;gap:8px;padding:12px 14px;border:1px solid var(--line);background:var(--bg-2);font-size:.86rem}
 .uka-vivo .uka-cifras{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--fg)}
