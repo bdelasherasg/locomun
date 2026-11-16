@@ -1,0 +1,45 @@
+{
+  "slug": "el-dilema-del-pdg-y-el-error-del",
+  "tipo": "articulo",
+  "clase": "Análisis con prueba pública",
+  "serie": "Prueba pública",
+  "numero": 4,
+  "fecha": "2026-11-16",
+  "lectura_minutos": 9,
+  "autor": "Esteban Pinto",
+  "cargo_autor": "Codirector de Lo Común",
+  "titulo": "El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal",
+  "titulo_corto": "El dilema del PDG y el error del Partido Liberal",
+  "bajada": "El análisis examina el cruce entre el senador Vlado Mirosevic y la bancada del Partido de la Gente antes de la votación de la acusación constitucional contra el ministro Fernando Rabat. Concluye que el PDG enfrenta una vulnerabilidad como bancada bisagra y que el Partido Liberal se equivoca al ubicarlo como adversario principal.",
+  "presentacion": [
+    "El texto examina el cruce público entre el Partido Liberal y la bancada del <strong>Partido de la Gente</strong> antes de la votación de la acusación constitucional contra el ministro de Justicia, Fernando Rabat. Describe los hechos de la primera quincena de noviembre de 2026.",
+    "Aplica la teoría de la hegemonía y el análisis de correlación de fuerzas. Concluye que el PDG queda expuesto como bancada bisagra y que el Partido Liberal comete un <strong>error de frontera</strong>. Propone dos condiciones de refutación."
+  ],
+  "resumen_portada": "Analiza el cruce entre el Partido Liberal y el PDG antes de la acusación constitucional contra el ministro Rabat, y propone dos condiciones para refutar sus tesis.",
+  "marco": "Teoría de la hegemonía y fronteras políticas (Laclau y Mouffe, 1985; Laclau, 2005); agonismo democrático (Mouffe, 2005); caracterización del populismo como ideología delgada (Mudde, 2004; Taggart, 2000); democracia de audiencia y personalización (Manin, 1997); psicología social de los encuadres (Lakoff, 2004; Entman, 1993); verdad de hecho y correspondencia entre palabra y acto (Arendt, 1958, 1968); análisis realista de correlación de fuerzas (Machiavelli, 1532; Weber, 1919; Gramsci, 1975)",
+  "fuentes": "Registros oficiales de tramitación parlamentaria y declaraciones públicas documentadas en la prensa nacional.",
+  "condicion": "La tesis sobre el PDG se refuta si la mayoría de sus 14 diputados vota en contra o se abstiene de forma coordinada para salvar al ministro; la tesis sobre el Partido Liberal se refuta si la bancada del PDG se rompe a favor de una alianza estable con Unidad por Chile o si estudios de opinión muestran un traslado neto de adhesión hacia el Partido Liberal.",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Revisado por una persona distinta al autor antes de su publicación",
+  "original": null,
+  "proxima_prueba": "Votación de la acusación constitucional contra el ministro Fernando Rabat en la Sala de la Cámara.",
+  "predicciones": [
+    {
+      "afirmacion": "El costo electoral de blindar a una autoridad cuestionada impide al PDG sostener una disciplina de apoyo al Ejecutivo.",
+      "refuta": "La mayoría de los 14 diputados del PDG vota en contra o se abstiene de forma coordinada para salvar al ministro Rabat.",
+      "verificacion": "Votación en la Sala de la Cámara",
+      "origen": "",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "El ataque frontal del Partido Liberal fortalece el encuadre independiente del PDG sin generar réditos opositores.",
+      "refuta": "Ruptura formal de la bancada del PDG a favor de una alianza estable con Unidad por Chile, o traslado neto de adhesión desde el electorado del PDG hacia el Partido Liberal en estudios de opinión.",
+      "verificacion": "Estudios de opinión posteriores al cruce",
+      "origen": "",
+      "estado": "pendiente",
+      "nota": ""
+    }
+  ],
+  "publicado_por": "bernardo"
+}
