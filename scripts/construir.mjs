@@ -202,9 +202,9 @@ function jsonLdArticulo(p, url, descripcion) {
     datePublished: p.fecha,
     dateModified: p.fecha_modificacion || p.fecha,
     author: { '@type': 'Person', ...(idPersona(p.autor) ? { '@id': idPersona(p.autor), url: idPersona(p.autor) } : {}), name: p.autor, ...(p.cargo_autor ? { jobTitle: p.cargo_autor } : {}) },
-    publisher: { '@type': 'Organization', '@id': `${SITIO}/#organizacion`, name: 'Lo Común', url: `${SITIO}/` },
+    publisher: { '@type': 'Organization', '@id': `${SITIO}/#organizacion`, name: 'Lo Común', url: `${SITIO}/`, logo: { '@type': 'ImageObject', url: `${SITIO}/img/marca/icono-512.png`, width: 512, height: 512 } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    image: `${SITIO}/img/salon.jpg`,
+    image: `${SITIO}/img/marca/compartir.jpg`,
     license: 'https://creativecommons.org/licenses/by-sa/4.0/',
     ...(p.doi ? { identifier: { '@type': 'PropertyValue', propertyID: 'DOI', value: p.doi }, sameAs: `https://doi.org/${p.doi}` } : {}),
     ...(p.serie ? { isPartOf: { '@type': 'CreativeWorkSeries', name: p.serie } } : {}),
@@ -250,13 +250,22 @@ function pagina(p) {
 <meta property="og:site_name" content="Lo Común">
 <meta property="og:locale" content="es_CL">
 <meta property="og:url" content="${esc(urlCanonica)}">
-<meta property="og:image" content="${SITIO}/img/salon.jpg">
+<meta property="og:image" content="${SITIO}/img/marca/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logotipo de Lo Común: Laboratorio Político y Estratégico">
 <meta property="article:published_time" content="${esc(p.fecha)}">
 <meta property="article:author" content="${esc(p.autor)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(tituloPagina)}">
 <meta name="twitter:description" content="${esc(descripcion)}">
-<meta name="twitter:image" content="${SITIO}/img/salon.jpg">
+<meta name="twitter:image" content="${SITIO}/img/marca/compartir.jpg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/marca/icono-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/marca/icono-192.png">
+<link rel="apple-touch-icon" href="/img/marca/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#31266a">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="${esc(urlCanonica)}">
 <script type="application/ld+json">${jsonLdArticulo(p, urlCanonica, descripcion)}</script>
