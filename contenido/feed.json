@@ -1,8 +1,20 @@
 {
  "sitio": "https://locomun.cl",
  "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
- "actualizado": "2026-11-12",
+ "actualizado": "2026-11-16",
  "publicaciones": [
+  {
+   "serie": "Prueba pública",
+   "numero": 4,
+   "titulo": "El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal",
+   "autor": "Esteban Pinto",
+   "fecha": "2026-11-16",
+   "fecha_texto": "16 de noviembre de 2026",
+   "minutos": 9,
+   "proxima_prueba": "Votación de la acusación constitucional contra el ministro Fernando Rabat en la Sala de la Cámara.",
+   "resumen": "Analiza el cruce entre el Partido Liberal y el PDG antes de la acusación constitucional contra el ministro Rabat, y propone dos condiciones para refutar sus tesis.",
+   "url": "https://locomun.cl/analisis/el-dilema-del-pdg-y-el-error-del.html"
+  },
   {
    "serie": "Prueba pública",
    "numero": 3,

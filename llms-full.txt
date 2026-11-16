@@ -62,15 +62,15 @@ Llamamos acción comunicativa correcta a la que reúne estas cinco condiciones. 
 Producción pública
 ### Publicamos lo que hacemos, con sus fuentes y sus fechas de prueba
 Cada publicación declara qué observación la refutaría y en qué fecha se verifica. Los resultados se publican aunque nos contradigan. Toda la producción pública se distribuye con licencia CC BY-SA 4.0.
-Prueba públicaN.° 3
-#### El contrato móvil de la inteligencia artificial
-Análisis de por qué las suscripciones de inteligencia artificial de US$20 entregan menos capacidad con el tiempo, con seis predicciones verificables hasta diciembre de 2027. La entrega N.° 2 está en Publicaciones.
+Prueba públicaN.° 4
+#### El dilema del PDG y el error del Partido Liberal
+Analiza el cruce entre el Partido Liberal y el PDG antes de la acusación constitucional contra el ministro Rabat, y propone dos condiciones para refutar sus tesis. La entrega N.° 3 está en Publicaciones.
 Autor
 Esteban Pinto
 Fecha
-12 de noviembre de 2026
+16 de noviembre de 2026
 Próxima prueba
-31 de enero de 2027: verificación de si OpenAI puso en marcha el fondo común de tokens entre ChatGPT y Codex (condición 5)
+Votación de la acusación constitucional contra el ministro Fernando Rabat en la Sala de la Cámara.
 Leer el artículo →
 Monitor económico2 estudios
 #### Desempleo y fractura estructural en la Región de Valparaíso
@@ -188,6 +188,26 @@ URL: https://locomun.cl/publicaciones.html
 Publicaciones
 ## Análisis expuestos a la prueba de los hechos
 Publicamos análisis propios y de autores externos con los mismos criterios. Cada uno declara su marco, sus fuentes y, cuando hace una afirmación sobre el futuro, el dato y la fecha que la pondrán a prueba.
+Serie Prueba pública · N.° 4 · 16 de noviembre de 2026
+### El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal
+El texto examina el cruce público entre el Partido Liberal y la bancada del Partido de la Gente antes de la votación de la acusación constitucional contra el ministro de Justicia, Fernando Rabat. Describe los hechos de la primera quincena de noviembre de 2026.
+Aplica la teoría de la hegemonía y el análisis de correlación de fuerzas. Concluye que el PDG queda expuesto como bancada bisagra y que el Partido Liberal comete un error de frontera. Propone dos condiciones de refutación.
+Leer el artículo completo →
+Ficha epistémicaN.° 4
+Clase
+Análisis con prueba pública
+Autor
+Esteban Pinto
+Marco declarado
+Teoría de la hegemonía y fronteras políticas (Laclau y Mouffe, 1985; Laclau, 2005); agonismo democrático (Mouffe, 2005); caracterización del populismo como ideología delgada (Mudde, 2004; Taggart, 2000); democracia de audiencia y personalización (Manin, 1997); psicología social de los encuadres (Lakoff, 2004; Entman, 1993); verdad de hecho y correspondencia entre palabra y acto (Arendt, 1958, 1968); análisis realista de correlación de fuerzas (Machiavelli, 1532; Weber, 1919; Gramsci, 1975)
+Fuentes
+Registros oficiales de tramitación parlamentaria y declaraciones públicas documentadas en la prensa nacional.
+Condición de refutación
+La tesis sobre el PDG se refuta si la mayoría de sus 14 diputados vota en contra o se abstiene de forma coordinada para salvar al ministro; la tesis sobre el Partido Liberal se refuta si la bancada del PDG se rompe a favor de una alianza estable con Unidad por Chile o si estudios de opinión muestran un traslado neto de adhesión hacia el Partido Liberal.
+Revisión
+Revisado por una persona distinta al autor antes de su publicación
+Licencia
+CC BY-SA 4.0
 Serie Prueba pública · N.° 3 · 12 de noviembre de 2026
 ### El Contrato Móvil de la Inteligencia Artificial: Devaluación de Cuotas, Economía Agéntica y Asimetría de Información
 El informe examina si la pérdida de capacidad de las suscripciones de inteligencia artificial entre 2023 y 2026 responde a causas económicas o a una estrategia comercial. Revisa el precio fijo de US$20 mensuales, los cambios de límites en Claude y ChatGPT, y los litigios y las investigaciones de autoridades en varios países.
@@ -384,6 +404,16 @@ Al menos uno de los procesos en curso (Kahn v. Anthropic, la investigación de l
 Prueba pública N.° 3
 Todos esos procesos concluyen sin un hallazgo de ese tipo, o ninguno lo ha producido al 31 de diciembre de 2027.
 31 dic. 2027
+Pendiente
+El costo electoral de blindar a una autoridad cuestionada impide al PDG sostener una disciplina de apoyo al Ejecutivo.
+Prueba pública N.° 4
+La mayoría de los 14 diputados del PDG vota en contra o se abstiene de forma coordinada para salvar al ministro Rabat.
+Votación en la Sala de la Cámara
+Pendiente
+El ataque frontal del Partido Liberal fortalece el encuadre independiente del PDG sin generar réditos opositores.
+Prueba pública N.° 4
+Ruptura formal de la bancada del PDG a favor de una alianza estable con Unidad por Chile, o traslado neto de adhesión desde el electorado del PDG hacia el Partido Liberal en estudios de opinión.
+Estudios de opinión posteriores al cruce
 Pendiente
 Protocolo de publicación
 ### Cómo evaluamos lo que publicamos
@@ -601,6 +631,97 @@ Si cambiamos los datos que pedimos, el uso que les damos o los servicios con que
 Última actualización: 15 de noviembre de 2026.
 
 # Publicaciones
+
+## El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal
+
+- Autor: Esteban Pinto
+- Fecha: 16 de noviembre de 2026
+- Clase: Análisis con prueba pública
+- Serie: Prueba pública N.° 4
+- Marco declarado: Teoría de la hegemonía y fronteras políticas (Laclau y Mouffe, 1985; Laclau, 2005); agonismo democrático (Mouffe, 2005); caracterización del populismo como ideología delgada (Mudde, 2004; Taggart, 2000); democracia de audiencia y personalización (Manin, 1997); psicología social de los encuadres (Lakoff, 2004; Entman, 1993); verdad de hecho y correspondencia entre palabra y acto (Arendt, 1958, 1968); análisis realista de correlación de fuerzas (Machiavelli, 1532; Weber, 1919; Gramsci, 1975)
+- Fuentes: Registros oficiales de tramitación parlamentaria y declaraciones públicas documentadas en la prensa nacional.
+- Condición de refutación: La tesis sobre el PDG se refuta si la mayoría de sus 14 diputados vota en contra o se abstiene de forma coordinada para salvar al ministro; la tesis sobre el Partido Liberal se refuta si la bancada del PDG se rompe a favor de una alianza estable con Unidad por Chile o si estudios de opinión muestran un traslado neto de adhesión hacia el Partido Liberal.
+- Revisión: Revisado por una persona distinta al autor antes de su publicación
+- URL: https://locomun.cl/analisis/el-dilema-del-pdg-y-el-error-del.html
+
+El análisis examina el cruce entre el senador Vlado Mirosevic y la bancada del Partido de la Gente antes de la votación de la acusación constitucional contra el ministro Fernando Rabat. Concluye que el PDG enfrenta una vulnerabilidad como bancada bisagra y que el Partido Liberal se equivoca al ubicarlo como adversario principal.
+
+#### Ficha epistémica y de respaldo (Protocolo de publicación · Herramienta 14)
+Clase de publicación: Análisis con prueba pública y lectura política de coyuntura.
+Fecha de publicación: 16 de noviembre de 2026.
+Línea de trabajo: Estrategia e Incidencia · Observatorio Lo Común.
+Marco teórico declarado: Teoría de la hegemonía y fronteras políticas (Laclau y Mouffe, 1985; Laclau, 2005); agonismo democrático (Mouffe, 2005); caracterización del populismo como ideología delgada (Mudde, 2004; Taggart, 2000); democracia de audiencia y personalización (Manin, 1997); psicología social de los encuadres (Lakoff, 2004; Entman, 1993); verdad de hecho y correspondencia entre palabra y acto (Arendt, 1958, 1968); y análisis realista de correlación de fuerzas (Machiavelli, 1532; Weber, 1919; Gramsci, 1975).
+Regla metodológica: Este informe separa explícitamente los hechos verificables de la coyuntura legislativa de noviembre de 2026 (Sección 1), las inferencias analíticas sobre ambos actores (Secciones 2 y 3), la proposición estratégica alternativa (Sección 4) y las condiciones empíricas de refutación (Sección 5).
+Estándar de neutralidad: Se evalúa la eficacia de conducción, la cohesión interna y la coherencia verificable de los actores políticos con las mismas reglas metodológicas, con independencia de la simpatía programática por sus proyectos.
+#### Resumen ejecutivo
+La antesala de la votación de la Acusación Constitucional (AC) contra el ministro de Justicia, Fernando Rabat, desencadenó un cruce público entre el senador Vlado Mirosevic, principal figura del Partido Liberal (PL), y la bancada del Partido de la Gente (PDG). Al acusar a la colectividad de Franco Parisi de operar como un «cogobierno» de José Antonio Kast y emplazarla a aclarar su relación con La Moneda, el PL intentó forzar una definición parlamentaria.
+El examen empírico del episodio arroja una doble conclusión estratégica:
+Para el PDG: Su diseño organizacional basado en una «ideología delgada» y liderazgo personalizado, eficaz para captar el voto de desconfianza en campaña, se vuelve una vulnerabilidad estructural al ejercer como bancada bisagra en el Congreso, donde cada votación nominal expone la brecha entre su discurso independiente y sus alineamientos efectivos.
+Para el Partido Liberal: Ubicar al PDG como el adversario principal constituye un error de conducción. Confunde al árbitro parlamentario cuyo voto se requiere para construir mayorías con el antagonista estructural del Ejecutivo, activa gratuitamente el relato anti-élite que fortalece a Parisi y desgasta el capital simbólico de una bancada minoritaria en una disputa asimétrica.
+### 1. Hechos verificables de la coyuntura (Noviembre de 2026)
+De acuerdo con los registros oficiales de tramitación parlamentaria y las declaraciones públicas documentadas en la prensa nacional durante la primera quincena de noviembre de 2026:
+Correlación numérica en la Cámara de Diputadas y Diputados (período 2026–2030): El bloque oficialista cuenta con 76 escaños y la oposición suma 65 escaños. Los 14 diputados del PDG constituyen el bloque pivote necesario para alcanzar los 78 votos que exige la mayoría absoluta de la Cámara, quórum indispensable para aprobar la Acusación Constitucional contra el ministro Fernando Rabat.
+Representación parlamentaria del Partido Liberal: En las elecciones parlamentarias de noviembre de 2025, el Partido Liberal obtuvo 3 escaños en la Cámara de Diputados dentro del pacto Unidad por Chile, además de la representación senatorial de Vlado Mirosevic.
+El emplazamiento del Partido Liberal: En la previa de la revisión del libelo acusatorio en Sala (cuya cuenta formal se fijó para el lunes 16 de noviembre), el senador Vlado Mirosevic acusó al PDG de funcionar como un «cogobierno» que garantiza mayoría al Presidente Kast en reformas económicas y recortes presupuestarios, emplazando directamente a Franco Parisi a transparentar su vínculo con el Ejecutivo.
+La respuesta del PDG: La bancada de diputados del PDG rechazó el emplazamiento señalando que la colectividad «no responde a instrucciones de ningún sector político, sino que decide con independencia y pensando en las necesidades de los chilenos», postergando su definición formal bajo el argumento de estudiar el mérito jurídico de los antecedentes. Paralelamente, el 15 de noviembre, tanto Franco Parisi como integrantes de su bancada reconocieron públicamente que existía una mayoría interna inclinada a respaldar la salida del ministro Rabat.
+### 2. Diagnóstico del PDG: anatomía y proyección de un actor bisagra (2026–2030)
+Aplicando las herramientas de diagnóstico de Lo Común, en particular la caracterización del populismo como ideología delgada (Mudde; Taggart), el análisis de democracia de audiencia (Manin) y la matriz de correlación de fuerzas (Herramienta 10), el comportamiento y la trayectoria proyectada del PDG se explican en tres niveles:
+#### A. De la eficacia electoral a la vulnerabilidad legislativa
+En la elección presidencial y parlamentaria de 2025, el PDG capitalizó el malestar ciudadano y la desconfianza hacia las élites partidarias mediante una frontera simple («la gente» frente a «los políticos tradicionales») y la ausencia de un programa doctrinario rígido. Sin embargo, al convertirse en el fiel de la balanza del Congreso en el período 2026–2030, la ambigüedad deja de ser sostenible: cada votación nominal en Sala (presupuesto, reformas tributarias o acusaciones constitucionales) produce un registro público verificable que contrasta su retórica de independencia con sus decisiones reales.
+#### B. Dualidad estructural y baja cohesión interna
+La organización del PDG exhibe una tensión permanente entre dos polos:
+Conducción mediática personalizada: Centrada en Franco Parisi, quien interviene desde plataformas digitales con un encuadre populista de defensa de la clase media y crítica transversal al sistema político. Autonomía de bancada: Un grupo de 14 diputados sin disciplina doctrinaria unificada, con incentivos distritales heterogéneos y antecedentes recientes de votaciones divergentes frente a proyectos económicos del Ejecutivo (donde distintos parlamentarios han reivindicado explícitamente que no reciben órdenes de ninguna directiva).
+#### C. Proyección hasta el cierre del gobierno de Kast
+De cara al resto del mandato presidencial y a las elecciones municipales y regionales de octubre de 2028, la estrategia de supervivencia del PDG se ordena en tres movimientos:
+HorizonteEstrategia proyectada delRiesgo o vulnerabilidad
+temporalPDGprincipal
+Corto plazoDesmarque en crisisSi la bancada se divide en
+(Coyuntura ACmorales y negociaciónvotaciones de alta
+Rabat ypuntual. Evitar el costovisibilidad pública, queda
+Presupuestoelectoral de blindar aexpuesta a la etiqueta de
+2027)autoridades con alto
+- «salvavidas» del Ejecutivo.
+- rechazo ciudadano por
+- fallas de probidad o
+- cuidado (inclinándose a
+- aprobar la AC o exigir la
+- renuncia previa), mientras
+- negocia voto a voto
+- medidas económicas.
+Mediano plazoVeto transaccional sinLa trazabilidad sistemática
+(Ciclo decosto de gobernar. Cobrarde sus votaciones
+desgastepeaje legislativo proyectoerosiona su perfil de
+oficialista,a proyecto (aliviosoutsider, exhibiéndolo
+2027–2028)tributarios o subsidios
+- como un partido
+- directos) sin integrarse al
+- transaccional tradicional.
+- gabinete, esquivando la
+- caída de aprobación
+- propia del ejercicio del
+- poder.
+Largo plazo (Municipales 2028 y Presidenciales 2029)Reactivación del eje «Pueblo vs. Élite». Endurecer su perfil opositor en la recta final del gobierno para disputar tanto al electorado desencantado de laFuga de parlamentarios hacia coaliciones establecidas (Chile Vamos, Republicanos o PNL), replicando la fragmentación de bancada del ciclo 2022–
+- derecha como a los 2026. sectores medios alejados
+- de la izquierda.
+### 3. El error estratégico del Partido Liberal: apuntar al árbitro
+Desde la teoría de la hegemonía y el realismo político (Herramientas 4, 6 y 10 de Lo Común), la decisión de Vlado Mirosevic de abrir un frente de ataque contra el PDG y ubicarlo como el enemigo a golpear revela tres fallas de conducción estratégica:
+Error de frontera política (Laclau y Mouffe): Toda identidad política eficaz se construye trazando una frontera nítida frente a un antagonista principal. En el ciclo 2026–2030, el adversario estructural del liberalismo democrático es el Ejecutivo de José Antonio Kast y el proyecto conservador que conduce el Estado. Al desplazar la ofensiva discursiva hacia Franco Parisi, el PL desvía la atención ciudadana desde La Moneda, responsable directa de los decretos de rebaja de condenas en Justicia, hacia un actor parlamentario intermedio.
+Violación de la regla básica de aritmética parlamentaria (Realismo político): Con 65 votos opositores frente a 76 oficialistas, ninguna ofensiva fiscalizadora de la oposición prospera sin los 14 votos del PDG. Hostilizar públicamente al actor bisagra en la víspera de una votación crítica convierte al árbitro circunstancial en enemigo y encarece o bloquea la construcción de mayorías en la Sala.
+Activación gratuita del marco populista (Lakoff; Mudde): Cuando un dirigente histórico del bloque progresista emplaza desde el Senado a una fuerza populista, valida exactamente la premisa de origen del PDG: que «las cúpulas de los partidos tradicionales» intentan pautear a quienes representan a «la gente». En lugar de exponer las contradicciones internas de la bancada de Parisi, el ataque les permite cerrar filas y victimizarse mediáticamente.
+Asimetría de fuerzas y desgaste de liderazgo: Abrir una confrontación directa entre una bancada de 3 diputados (PL) y un bloque pivote de 14 (PDG) expone al liberalismo al aislamiento sin ofrecerle ganancia electoral en el segmento desencantado. Asimismo, invierte la visibilidad de su principal liderazgo nacional en escaramuzas reactivas contra terceros, en lugar de proyectar una agenda legislativa propia frente al Gobierno.
+### 4. Proposición estratégica de Lo Común: del enfrentamiento verbal a la trazabilidad
+Para ocupar con autoridad el espacio de la Democracia Liberal (certeza institucional, libertades individuales y protección social con responsabilidad), la conducción parlamentaria requiere sustituir la descalificación retórica por herramientas de precisión:
+Dimensión operativaTáctica reactiva tradicional (Error observado)Proposición metodológica de Lo Común (Eficacia verificable)
+Definición de frontera (Herramienta 4)Dispersar el ataque hacia bancadas bisagra acusándolas de «cogobierno».Mantener el antagonismo concentrado en el Ejecutivo y en los actos de gobierno que afectan la probidad, la seguridad o el bienestar social.
+Relación en el Congreso (Herramienta 10)Emplazamientos públicos hostiles antes de las votaciones clave.Agonismo pragmático (Mouffe): Tratar al PDG como una bancada
+- autónoma a la que se convoca voto a voto en causas concretas, sin exigirle adhesión ideológica previa.
+Exposición de incoherencias (Herramienta 15)Usar etiquetas políticas («son de derecha», «son cogobierno») que el populismo desmiente fácilmente.Dejar hablar a los registros públicos: Contrastar objetivamente las declaraciones del PDG («defendemos a la clase
+- media») con sus votaciones nominales en sala (rebajas tributarias o blindajes ministeriales), sin necesidad de adjetivos.
+### 5. Condiciones de refutación y prueba pública (Herramienta 14)
+Conforme al estándar editorial de Lo Común, las tesis de este análisis quedan sometidas a las siguientes condiciones empíricas de verificación y refutación:
+Sobre la proyección del PDG en la AC: La inferencia de que el costo electoral de blindar a una autoridad cuestionada por rebajas de condena a agresores sexuales impide al PDG sostener una disciplina de apoyo al Ejecutivo quedaría refutada si la mayoría de los 14 diputados del PDG votara en contra o se abstuviera coordinadamente para salvar al ministro Rabat en la Sala de la Cámara.
+Sobre el efecto del emplazamiento del PL: La evaluación de que el ataque frontal del Partido Liberal fortalece el encuadre independiente del PDG sin generar réditos opositores quedaría refutada si tras este cruce se produjera una ruptura formal de la bancada del PDG en favor de una alianza estable con el bloque Unidad por Chile, o si los estudios de opinión posteriores registraran un traslado neto de adhesión desde el electorado del PDG hacia el Partido Liberal.
+Producción pública de Lo Común · Laboratorio Político y Estratégico (locomun.cl), distribuida bajo licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Datos legislativos monitoreados en tiempo real en urgenciaskast.cl.
 
 ## El Contrato Móvil de la Inteligencia Artificial: Devaluación de Cuotas, Economía Agéntica y Asimetría de Información
 
