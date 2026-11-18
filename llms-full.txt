@@ -62,15 +62,15 @@ Llamamos acción comunicativa correcta a la que reúne estas cinco condiciones. 
 Producción pública
 ### Publicamos lo que hacemos, con sus fuentes y sus fechas de prueba
 Cada publicación declara qué observación la refutaría y en qué fecha se verifica. Los resultados se publican aunque nos contradigan. Toda la producción pública se distribuye con licencia CC BY-SA 4.0.
-Prueba públicaN.° 4
-#### El dilema del PDG y el error del Partido Liberal
-Analiza el cruce entre el Partido Liberal y el PDG antes de la acusación constitucional contra el ministro Rabat, y propone dos condiciones para refutar sus tesis. La entrega N.° 3 está en Publicaciones.
+Prueba públicaN.° 5
+#### La frontera agotada
+Prueba pública N.° 5: el gabinete, Chile Vamos y el relato del gobierno de Kast. Tres anticipaciones verificables el 31 de enero de 2027. La entrega N.° 4 está en Publicaciones.
 Autor
-Esteban Pinto
+Bernardo de Las Heras
 Fecha
-16 de noviembre de 2026
+18 de noviembre de 2026
 Próxima prueba
-Votación de la acusación constitucional contra el ministro Fernando Rabat en la Sala de la Cámara.
+31 de enero de 2027: verificación de las tres anticipaciones.
 Leer el artículo →
 Monitor económico2 estudios
 #### Desempleo y fractura estructural en la Región de Valparaíso
@@ -188,6 +188,26 @@ URL: https://locomun.cl/publicaciones.html
 Publicaciones
 ## Análisis expuestos a la prueba de los hechos
 Publicamos análisis propios y de autores externos con los mismos criterios. Cada uno declara su marco, sus fuentes y, cuando hace una afirmación sobre el futuro, el dato y la fecha que la pondrán a prueba.
+Serie Prueba pública · N.° 5 · 18 de noviembre de 2026
+### La frontera agotada
+El análisis examina si el gobierno de José Antonio Kast puede seguir sin compartir la conducción política con los partidos de Chile Vamos, y qué le cuesta compartirla. Revisa cómo se armó el gabinete y qué ocurrió con la aprobación y el respaldo internacional.
+Aplica la distinción entre dominio y dirección de Gramsci y la idea de frontera política de Laclau. Concluye que el gobierno deberá abrir el gabinete a esos partidos y registra tres anticipaciones con condición de refutación, verificables el 31 de enero de 2027.
+Leer el artículo completo →
+Ficha epistémicaN.° 5
+Clase
+Análisis con prueba pública
+Autor
+Bernardo de Las Heras
+Marco declarado
+Dominio y dirección (Gramsci, 1975); hegemonía, frontera política y significantes (Laclau y Mouffe, 1985; Laclau, 2005); capital político (Bourdieu, 1981); falsación (Popper, 1963)
+Fuentes
+Prensa nacional e internacional de septiembre de 2022 y de diciembre de 2025 a noviembre de 2026; resultados de las encuestas Cadem, Criteria y AtlasIntel según los medios que los publicaron.
+Condición de refutación
+Tres anticipaciones con fecha de verificación el 31 de enero de 2027: un cambio de gabinete con al menos dos nuevos ministros militantes de RN, UDI o Evópoli; efecto sobre la aprobación entre los votantes de Kast; y reacción del Partido Nacional Libertario.
+Revisión
+Revisado por una persona distinta de su autor antes de publicarse
+Licencia
+CC BY-SA 4.0
 Serie Prueba pública · N.° 4 · 16 de noviembre de 2026
 ### El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal
 El texto examina el cruce público entre el Partido Liberal y la bancada del Partido de la Gente antes de la votación de la acusación constitucional contra el ministro de Justicia, Fernando Rabat. Describe los hechos de la primera quincena de noviembre de 2026.
@@ -415,6 +435,21 @@ Prueba pública N.° 4
 Ruptura formal de la bancada del PDG a favor de una alianza estable con Unidad por Chile, o traslado neto de adhesión desde el electorado del PDG hacia el Partido Liberal en estudios de opinión.
 Estudios de opinión posteriores al cruce
 Pendiente
+Antes del 31 de enero de 2027 habrá un cambio de gabinete con al menos dos nuevos ministros militantes de RN, UDI o Evópoli, y esos tres partidos tendrán más ministros que al 16 de noviembre de 2026.
+Prueba pública N.° 5
+Que al 31 de enero no haya cambio de gabinete, o que lo haya sin cumplir ambas condiciones.
+31 ene. 2027
+Pendiente
+Si se cumple la primera, la aprobación entre quienes votaron por Kast en segunda vuelta no superará, en las cuatro mediciones Cadem siguientes, el valor de la última medición anterior al cambio.
+Prueba pública N.° 5
+Que alguna de esas mediciones lo supere en más de tres puntos. Si Cadem no informa el segmento, el resultado será indeterminado.
+Cuatro semanas después del cambio
+Pendiente
+Si se cumple la primera, el Partido Nacional Libertario no integrará el gabinete y su dirigencia calificará el cambio como concesión a Chile Vamos o alejamiento del programa dentro de dos semanas.
+Prueba pública N.° 5
+Que un militante de ese partido asuma un ministerio, o que su dirigencia respalde el cambio sin reservas.
+Dos semanas después del cambio
+Pendiente
 Protocolo de publicación
 ### Cómo evaluamos lo que publicamos
 Recibimos aportes del equipo y de autores externos: académicos, investigadores, asesores y estudiantes. Se evalúan por su calidad, con independencia de quién los firma y de si coinciden con nuestras tesis.
@@ -631,6 +666,123 @@ Si cambiamos los datos que pedimos, el uso que les damos o los servicios con que
 Última actualización: 15 de noviembre de 2026.
 
 # Publicaciones
+
+## La frontera agotada
+
+- Autor: Bernardo de Las Heras
+- Fecha: 18 de noviembre de 2026
+- Clase: Análisis con prueba pública
+- Serie: Prueba pública N.° 5
+- Marco declarado: Dominio y dirección (Gramsci, 1975); hegemonía, frontera política y significantes (Laclau y Mouffe, 1985; Laclau, 2005); capital político (Bourdieu, 1981); falsación (Popper, 1963)
+- Fuentes: Prensa nacional e internacional de septiembre de 2022 y de diciembre de 2025 a noviembre de 2026; resultados de las encuestas Cadem, Criteria y AtlasIntel según los medios que los publicaron.
+- Condición de refutación: Tres anticipaciones con fecha de verificación el 31 de enero de 2027: un cambio de gabinete con al menos dos nuevos ministros militantes de RN, UDI o Evópoli; efecto sobre la aprobación entre los votantes de Kast; y reacción del Partido Nacional Libertario.
+- Revisión: Revisado por una persona distinta de su autor antes de publicarse
+- URL: https://locomun.cl/analisis/prueba-publica-5.html
+
+Una prueba pública al gobierno: gabinete, Chile Vamos y relato
+
+Pregunta. ¿Puede el gobierno de José Antonio Kast seguir gobernando sin compartir la conducción política con los partidos de Chile Vamos, y qué le cuesta compartirla?
+Tesis. El gobierno se organizó con un gabinete de mayoría independiente y con la conducción concentrada en el entorno del Presidente. Los partidos de Chile Vamos recibieron dos ministerios políticos, ocupados por personas de confianza presidencial, y quedaron sin participación en las decisiones. En paralelo, el Partido Republicano mantuvo frente a ellos la distinción con la que construyó su identidad. Ese diseño fue sostenible mientras el gobierno dispuso de dos recursos que suplían la falta de coalición: la aprobación ciudadana y el respaldo de los referentes internacionales de su sector. Ambos se han reducido de manera verificable. En consecuencia, el gobierno deberá entregar a los partidos de Chile Vamos más cargos en el gabinete y participación efectiva en la conducción, para asegurar votos en el Congreso y protección frente a las acusaciones constitucionales. Esa apertura tiene un costo propio: disuelve la distinción entre el Partido Republicano y la derecha tradicional y deja un flanco abierto hacia el Partido Nacional Libertario.
+##### 1. El diseño: ministros de Chile Vamos, gobierno sin coalición
+El 20 de enero de 2026 el Presidente electo presentó un gabinete de 24 ministros. Dieciséis eran independientes. Los ocho militantes se repartían entre dos republicanos y un representante de la UDI, Renovación Nacional, Evópoli, el Partido Social Cristiano, Demócratas y el Partido Radical (Emol, 2026a). Dos de ellos recibieron ministerios políticos: Claudio Alvarado, de la UDI, en Interior, y José García Ruminot, de Renovación Nacional, en la Secretaría General de la Presidencia. Desde ese día ambos partidos esperaban una presencia mayor (Emol, 2026b).
+Tres hechos muestran que esa presencia no constituyó una coalición.
+El primero es el criterio de los nombramientos. Según El Dínamo (2026a), Alvarado es amigo personal del Presidente y militante de la UDI sin cercanía con la directiva de su partido. Los cargos se asignaron por confianza presidencial, y los partidos no designaron a sus titulares.
+El segundo es el cambio de gabinete del 19 de mayo. A poco más de dos meses de asumir, el Presidente removió a las ministras de Seguridad Pública y de la Secretaría General de Gobierno, trasladó a Martín Arrau a Seguridad y sumó la vocería al ministro del Interior (CNN Chile, 2026). Fue el cambio de gabinete más rápido desde 1990 (Infobae, 2026), y el propio Presidente declaró: "No esperaba hacer este cambio de gabinete" (BioBioChile, 2026a). El gobierno de Gabriel Boric, en su primer cambio de gabinete, del 6 de septiembre de 2022, entregó Interior y la Secretaría General de la Presidencia a militantes del PPD y del Partido Socialista (T13, 2022). El gobierno de Kast resolvió la misma situación de otro modo: reubicó a ministros de su confianza, amplió los biministerios y no incorporó los nombres que Chile Vamos había propuesto (El Dínamo, 2026a).
+El tercero es el juicio de los propios aliados. En agosto, Evelyn Matthei afirmó que entre las tres fuerzas de la derecha "no hay coalición" (El Mostrador, 2026a). En noviembre, el jefe de la bancada de Renovación Nacional sostuvo que el modelo actual "ya cumplió su función" y propuso sumar parlamentarios al Ejecutivo, y el presidente de Evópoli declaró no saber bien qué hace el equipo de asesores presidenciales del Segundo Piso (T13, 2026b). Emol (2026c) describió ese mismo mes la pérdida progresiva de protagonismo del ministro García Ruminot.
+A noviembre de 2026 el gabinete tiene 14 ministros independientes y 8 militantes de partidos (Emol, 2026d).
+##### 2. Por qué el diseño pudo sostenerse
+Gramsci (1975, Q19, §24) distingue dos formas en que un grupo ejerce la supremacía: el dominio, que opera mediante los instrumentos del Estado, y la dirección, que consiste en obtener la adhesión de los grupos aliados mediante concesiones. Un gobierno puede ejercer dominio sin dirección mientras los instrumentos de que dispone le basten.
+En un régimen presidencial como el chileno esos instrumentos son amplios: las urgencias legislativas, el veto, la potestad reglamentaria y la iniciativa exclusiva en materias de gasto. A ellos se sumaban dos recursos que no dependen del derecho.
+El primero era la aprobación. El Dínamo (2026b) informó que Cadem la midió en 57 % al inicio del mandato. Un Presidente con ese respaldo impone costos a los parlamentarios de su sector que se apartan de él.
+El segundo era el respaldo de una corriente política internacional en ascenso, encabezada por el Presidente de Estados Unidos. El 15 de diciembre de 2025, Donald Trump celebró desde la Casa Blanca el triunfo de Kast y lo presentó como el candidato al que había apoyado (El Mostrador, 2025). El 7 de marzo de 2026, cuatro días antes de asumir, Kast participó en Miami en la cumbre Escudo de las Américas, convocada por Trump, quien lo felicitó en su discurso (Emol, 2026e). En septiembre, Chile pasó de observador a miembro de esa iniciativa (T13, 2026a). Radio Universidad de Chile (2026) describió el respaldo recibido en Miami como un capital político internacional significativo. La prensa ha consignado además la cercanía de Kast con Santiago Abascal, líder de Vox (La Tercera, 2026).
+Bourdieu (1981) describe el capital político como un crédito fundado en la creencia y el reconocimiento de otros, que puede provenir del propio agente o de la organización o corriente que lo respalda. El respaldo descrito corresponde al segundo tipo. Cabe pensar que operó también hacia dentro: un gobierno identificado con una corriente que ganaba elecciones en el continente ofrecía a sus aliados una razón adicional para aceptar un lugar subordinado.
+##### 3. Los dos recursos se redujeron
+La aprobación cayó a menos de la mitad. Cadem registró 26 % el 1 de noviembre, el nivel más bajo de su serie, y 27 % el 15 de noviembre, con 69 % de desaprobación (Emol, 2026f; Meganoticias, 2026). En la serie de Criteria, la aprobación bajó de 24 % a 18 % entre el 8 y el 15 de noviembre, y la desaprobación subió a 72 %, los peores registros desde que el Presidente asumió (Emol, 2026h, 2026l). Radio Agricultura (2026) informó que, en la medición de Cadem del 1 de noviembre, la aprobación entre quienes votaron por Kast en la segunda vuelta bajó diez puntos y llegó a 59 %.
+La caída más reciente coincide con el paro de camioneros iniciado el 10 de noviembre por el alza de los combustibles. Según Criteria, 80 % de los encuestados está a favor de la movilización (Emol, 2026l); según Cadem, 64 % está de acuerdo con que los camioneros bloqueen las carreteras para presionar al gobierno (Meganoticias, 2026).
+El crédito internacional también se redujo.
+- Estados Unidos. El Partido Republicano perdió ambas cámaras del Congreso en la elección del 3 de noviembre de 2026. Los demócratas obtuvieron al menos 54 escaños en el Senado y 228 en la Cámara de Representantes (Washington Examiner, 2026).
+- Hungría. Viktor Orbán perdió la elección parlamentaria del 12 de abril de 2026, después de dieciséis años en el poder (Novak, 2026).
+- Brasil. Flávio Bolsonaro fue derrotado en la elección presidencial de este año y viajó a Estados Unidos después de que un juez del Supremo Tribunal Federal pidiera retener sus pasaportes. Su padre cumple una condena de 27 años por el intento de golpe de Estado (Emol, 2026i). Colombia. La aprobación de Abelardo de la Espriella bajó de 51,8 % a 48,7 % entre septiembre y octubre, según AtlasIntel (Valora Analitik, 2026).
+- Perú. Keiko Fujimori cumplió cien días de gobierno con una aprobación a la baja (Primicias, 2026).
+Ninguno de estos hechos altera las atribuciones legales del Presidente de Chile. Modifican el valor del reconocimiento externo como argumento interno: una corriente que pierde elecciones ofrece a los aliados menos razones para subordinarse a quien la representa.
+##### 4. Lo que el dominio ya no alcanza a cubrir
+Hay decisiones que los instrumentos del Ejecutivo no resuelven, porque requieren votos. La acusación constitucional contra el ministro de Justicia, Fernando Rabat, presentada el 12 de noviembre, es el caso más claro. Si asisten los 155 diputados, la acusación necesita 78 votos (The Clinic, 2026). La oposición reúne alrededor de 65, de modo que el resultado depende de los diputados del Partido de la Gente o de parlamentarios oficialistas que se aparten del gobierno (Ex-Ante, 2026a). Emol (2026d) informó que el ministro ha perdido apoyos en Chile Vamos, que parlamentarios de esa coalición cuestionan su permanencia y que se abrió la posibilidad de que respalden una acusación en su contra. Según Cadem, 70 % de los encuestados está en desacuerdo con mantenerlo en el cargo (Emol, 2026f).
+En este punto la relación de fuerzas se invierte. Con aprobación alta, el parlamentario aliado que se aparta del gobierno asume un costo. Con una aprobación de 18 % en Criteria y de 27 % en Cadem, y un ministro rechazado por siete de cada diez encuestados, el costo lo asume quien lo defiende. La protección del gabinete frente a las acusaciones depende entonces de la voluntad de Chile Vamos, y esa voluntad tiene un precio declarado: sus partidos piden un "nuevo diseño político", que a su juicio incluye la salida del ministro de Justicia y de otros ministros (Emol, 2026d).
+Los hechos de noviembre apuntan en esa dirección. El secretario general del Partido Republicano reconoció que existe consenso entre los partidos oficialistas sobre la necesidad de ajustes y que los secretarios generales de Chile Vamos y de su partido se reunieron para tratarlos (El Desconcierto, 2026). El jefe de la bancada republicana admitió dificultades en el manejo político (T13, 2026b). Ex-Ante informó que La Moneda prepara un cambio de gabinete mayor, previsto en un comienzo para fines de diciembre o inicios de enero y adelantado por la crisis de las rebajas de condena, mientras el vocero de gobierno negó que se esté analizando un ajuste (T13, 2026b). El Presidente inició el 16 de noviembre una gira de seis días por Asia (Emol, 2026k).
+##### 5. El costo de abrir: la frontera con la derecha tradicional
+Laclau (2005) sostiene que una identidad política se constituye al trazar una frontera: un nosotros se define frente a un otro, y el nombre que designa esa diferencia ordena al conjunto. El Partido Republicano trazó dos fronteras. Una frente a la izquierda, que compartía con toda la derecha. Otra frente a la derecha tradicional, que justificaba su existencia como partido distinto.
+El nombre de esa segunda frontera fue "derechita cobarde". Santiago Abascal usó la expresión en abril de 2019 contra el Partido Popular español, y La Tercera (2026) documenta que en Chile fue promovida incluso por el propio Kast, quien en diciembre de 2019 describió a la derecha de entonces como una derecha con miedo y cobarde. El término organizó una oposición entre una derecha valiente y otra dispuesta a ceder.
+Durante 2026 la frontera siguió activa dentro del oficialismo. Republicanos emplazó a Chile Vamos a sumarse a la acusación constitucional contra el exministro Nicolás Grau, de la que esa coalición se había desmarcado (La Tercera, 2026). El presidente del Partido Republicano declaró que su partido no dejará de expresar lo que lo distingue de la derecha tradicional (El Mostrador, 2026a). En la crisis de noviembre, el partido concentró sus esfuerzos en defender la continuidad del ministro de Justicia, en contraste con Chile Vamos (T13, 2026b).
+Chile Vamos, a su vez, comenzó a apropiarse del término. El senador Iván Moreira sostuvo que la "derechita cobarde" es la primera en defender con lealtad al Presidente (Emol, 2026j). Una lectura posible es que el significante ya estaba en disputa antes de cualquier cambio de gabinete, y que Chile Vamos lo ha convertido en un título de lealtad.
+Si el gobierno entrega cargos y conducción a los partidos que el suyo designó con ese nombre, la frontera pierde su objeto. En los términos de Laclau y Mouffe (1985), el elemento que se había excluido para constituir la identidad pasa a formar parte de ella, y el nombre que marcaba la diferencia deja de distinguir. Quienes adhirieron al proyecto por esa diferencia quedan sin la razón que los separaba de la derecha tradicional.
+El costo depende de cómo se conduzca el cambio. Un cambio de posición que se explica públicamente es distinto de uno que se niega. Un gobierno que declare que las condiciones cambiaron y que la coalición amplia es su nueva definición ofrece a su base un relato para el giro. Uno que presente el ajuste como continuidad deja a esa base sin explicación y entrega la interpretación a sus competidores.
+##### 6. Hanói: el mismo problema en la otra frontera
+El 16 de noviembre de 2026, en su visita de Estado a Vietnam, el Presidente depositó una ofrenda floral en el mausoleo de Ho Chi Minh (Emol, 2026k). En noviembre de 2017, cuando la Presidenta Michelle Bachelet rindió ese mismo homenaje, Kast, entonces candidato presidencial, la criticó en su cuenta de Twitter y describió el gobierno de Ho Chi Minh como una dictadura; más tarde lo calificó de "asesino en serie" (BioBioChile, 2026b; El Mostrador, 2026b). Fuentes de la Presidencia explicaron que la ofrenda es una de las actividades habituales de las visitas de Estado a ese país (Canal 9, 2026). Emol (2026k) resumió el episodio como el predominio de la relevancia comercial sobre lo ideológico.
+El episodio no se refiere a Chile Vamos. Su objeto es la otra frontera, la que separa a la derecha de la izquierda, y dentro de ella el anticomunismo, que fue uno de sus contenidos principales en el discurso de Kast. Su interés para este análisis está en el mecanismo, que es el mismo de la sección anterior: el ejercicio del gobierno obligó al Presidente a realizar un acto que su relato de campaña había condenado.
+Dos rasgos del caso anticipan lo que puede ocurrir con un cambio de gabinete. Primero, la conducta cambió y el relato no la acompañó. La explicación ofrecida, el protocolo, describe por qué se hizo la ofrenda y no dice qué queda de la crítica de 2017. En los términos de la sección 5, es un cambio de posición sin explicación pública. Segundo, la interpretación quedó en manos de otros: la prensa de todo el espectro tituló con el contraste entre el homenaje y las declaraciones anteriores.
+Una lectura posible es que el gobierno ya enfrenta, en un asunto menor, el dilema que este análisis le atribuye en uno mayor, y que lo resolvió del modo más costoso para su identidad: actuó según la necesidad y dejó el relato sin corregir.
+##### 7. El flanco que queda abierto
+El competidor mejor ubicado para aprovechar ese costo es el Partido Nacional Libertario. En enero anunció que no formaría parte del gobierno; había elegido ocho diputados y una senadora (Ex-Ante, 2026b). Sus dirigentes sostienen que, al no integrar el gobierno, no tienen deber de disciplina con La Moneda, y anuncian que seguirán presionando por el cumplimiento de las promesas de campaña del Presidente (El Mostrador, 2026a).
+La presión ya opera sobre el Partido Republicano. Matthei sostuvo que los republicanos compiten con los libertarios para evitar que se les aplique a ellos el nombre de "derechita cobarde" (El Mostrador, 2026a). Una apertura a Chile Vamos expone al partido del Presidente a esa misma acusación.
+De aquí se sigue una distinción. Los adherentes más ideológicos, para quienes la diferencia con la derecha tradicional era el motivo de su adhesión, tienen en el Partido Nacional Libertario una opción que conserva esa diferencia. Los votantes menos ideológicos se alejan por razones de desempeño: según Cadem, las rebajas de condena y el aumento del desempleo son las principales razones de la desaprobación (Emol, 2026g). La apertura a Chile Vamos afectaría sobre todo a los primeros.
+El gobierno enfrenta así un dilema con costo en ambas ramas. Abrir el gabinete le entrega votos y protección en el Congreso y le resta identidad frente a su núcleo. Mantener el diseño conserva la identidad y lo deja sin los votos que necesita, con una base que de todos modos se reduce.
+##### 8. Las mejores objeciones
+Primera objeción: Chile Vamos ya conduce el gobierno. Militantes de la UDI y de Renovación Nacional ocupan Interior, la vocería y la Secretaría General de la Presidencia, y dirigentes de la propia UDI han sostenido que no existe distancia con los partidos, que siguen siendo fundamentales para el respaldo político (El Dínamo, 2026a). La respuesta está en los hechos de la sección 1. Con esos ministros en sus cargos, la candidata presidencial de la coalición declaró que no hay coalición, sus jefes de bancada pidieron un nuevo diseño y sus parlamentarios se abrieron a votar una acusación contra un ministro. La presencia de militantes elegidos por confianza presidencial no ha dado a los partidos participación en las decisiones. Por eso la condición de refutación se mide con ingresos nuevos al gabinete.
+Segunda objeción: la causa es interna y lo internacional es accesorio. Las razones de la desaprobación que registra Cadem son nacionales (Emol, 2026g). El factor interno basta para explicar la pérdida de votos en el Congreso, y la tesis lo recoge en la sección 4. El factor internacional explica otra cosa: por qué los aliados aceptaron durante ocho meses un lugar subordinado y por qué dejaron de aceptarlo cuando la corriente que respaldaba al gobierno comenzó a perder elecciones.
+Tercera objeción: la base ya se erosiona sin apertura. La aprobación entre los votantes de Kast bajó antes de cualquier cambio de gabinete. Por esa razón la segunda anticipación compara la medición inmediatamente anterior al cambio con las cuatro siguientes, y no con el nivel de comienzos del mandato.
+##### 9. Condición de refutación
+Se registran tres anticipaciones, con fecha de verificación el 31 de enero de 2027.
+Primera anticipación. Antes del 31 de enero de 2027 el gobierno realizará un cambio de gabinete en el que ingresarán al menos dos ministros militantes de Renovación Nacional, la UDI o Evópoli que no integraban el gabinete al 16 de noviembre de 2026, y el número de ministros militantes de esos tres partidos será mayor que el de esa fecha. La tesis queda refutada si al 31 de enero no hubo cambio de gabinete, o si lo hubo sin cumplir ambas condiciones.
+Segunda anticipación. Si la primera se cumple, la aprobación presidencial entre quienes votaron por Kast en la segunda vuelta no superará, en las mediciones de Cadem publicadas durante las cuatro semanas siguientes al cambio, el valor de la última medición anterior a él que informe ese segmento. La afirmación de la sección 5 queda refutada si alguna de esas mediciones lo supera en más de tres puntos. Si Cadem no informa el segmento en ese periodo, el resultado será indeterminado.
+Tercera anticipación. Si la primera se cumple, el Partido Nacional Libertario no integrará el gabinete resultante, y dentro de las dos semanas siguientes al cambio su presidente o su directiva lo calificarán públicamente como una concesión a Chile Vamos o como un alejamiento del programa, según conste en la prensa nacional. La afirmación de la sección 7 queda refutada si un militante de ese partido asume un ministerio, o si su dirigencia respalda el cambio sin reservas.
+Si la primera anticipación resulta refutada, la segunda y la tercera se registrarán como indeterminadas. El resultado se publicará en locomun.cl cualquiera sea su signo.
+##### Ficha epistémica
+Clase de aporte: análisis con prueba pública. Marco declarado: distinción entre dominio y dirección (Gramsci, 1975); teoría de la hegemonía,
+- frontera política y significantes (Laclau y Mouffe, 1985; Laclau, 2005); capital político como crédito fundado en el reconocimiento (Bourdieu, 1981); falsación (Popper, 1963) para la condición de refutación.
+Fuentes de datos: prensa nacional e internacional de septiembre de 2022 y de diciembre de 2025 a noviembre de 2026; resultados de las encuestas Cadem, Criteria y AtlasIntel según los medios que los publicaron. Condición de refutación: las tres anticipaciones de la sección 9. Fecha de verificación: 31 de enero de 2027. Conflictos declarados: el autor es codirector de Lo Común, que ofrece asesoría a parlamentarios del espacio progresista y liberal. Lo Común no tiene relación contractual con el gobierno ni con los partidos cuya actuación se analiza. Licencia: CC BY-SA 4.0.
+##### Referencias
+BioBioChile (2026a, 19 de mayo). Presidente Kast admite que no esperaba hacer un cambio de gabinete en esta etapa de gobierno.
+BioBioChile (2026b, 16 de noviembre). Kast deposita ofrenda a Ho Chi Minh: lo calificó de "asesino en serie" cuando Bachelet hizo lo mismo.
+Bourdieu, P. (1981). La représentation politique. Éléments pour une théorie du champ politique. Actes de la recherche en sciences sociales, 36-37, 3-24.
+Canal 9 (16 de noviembre de 2026). Kast rinde homenaje a Ho Chi Minh en Vietnam, pese a haberlo llamado antes "asesino en serie".
+CNN Chile (20 de mayo de 2026). Primer cambio de gabinete del Presidente Kast: salen Steinert y Sedini, Arrau a Seguridad, Alvarado a vocería y se crean biministros.
+El Desconcierto (4 de noviembre de 2026). Partido Republicano abre la puerta a un eventual cambio de gabinete de Kast: "Es necesario hacer ajustes".
+El Dínamo (2026a, 20 de mayo). Kast sigue adelante sin los partidos y fortalece a su núcleo.
+El Dínamo (2026b, 3 de junio). Kast alcanza su mejor nivel de aprobación en seis semanas tras una Cuenta Pública que la mitad del país evaluó positivamente.
+El Mostrador (15 de diciembre de 2025). "La persona a la que apoyé": Trump celebra victoria de Kast y lo elogia desde la Casa Blanca.
+El Mostrador (2026a, 4 de agosto). Fantasma de la "derechita cobarde" agita al oficialismo y deja a Kast al medio.
+El Mostrador (2026b, 16 de noviembre). Las vueltas de Kast: homenajea al "asesino" Ho Chi Minh tras criticar a Bachelet por hacer lo mismo.
+Emol (2026a, 24 de enero). Análisis FODA al gabinete "técnico" y con escasa representación de partidos de Kast.
+Emol (2026b, 20 de enero). Gabinete: Kast incluye fuerzas del Rechazo y opta por independientes para el "gobierno de emergencia".
+Emol (2026c, 1 de noviembre). La progresiva pérdida de protagonismo que ha mostrado el ministro José García Ruminot.
+Emol (2026d, 6 de noviembre). ¿Cambio de gabinete?: mapa de apoyos de los ministros en un equipo con 14 independientes.
+Emol (2026e, 7 de marzo). Encuentro con Trump, bilaterales y acuerdo de "coalición militar": cómo fue la última gira de Kast antes del cambio de mando.
+Emol (2026f, 1 de noviembre). Cadem: un 70 % está en desacuerdo con la decisión del Presidente de mantener al ministro Rabat.
+Emol (2026g, 8 de noviembre). Cadem: rebajas de penas (43 %) y aumento del desempleo (42 %) son las principales razones de la desaprobación de Kast.
+Emol (2026h, 8 de noviembre). Criteria: aprobación del Presidente Kast cae al 24 % y desaprobación llega al 67 %.
+Emol (2026i, 1 de noviembre). El clan Bolsonaro: las condenas e investigaciones judiciales que complican al núcleo familiar.
+Emol (2026j, 4 de julio). Moreira (UDI): "La 'derechita cobarde' es la primera en defender con lealtad al Presidente Kast".
+Emol (2026k, 16 de noviembre). Relevancia comercial sobre lo ideológico: Presidente Kast entrega ofrenda a Ho Chi Minh en Vietnam.
+Emol (2026l, 15 de noviembre). Criteria: aprobación al Presidente Kast cae seis puntos y llega al 18 %.
+Ex-Ante (2026a, noviembre). Por qué el PDG mantiene el misterio sobre su voto en la acusación contra Rabat.
+Ex-Ante (2026b, enero). "No formaremos parte del gobierno": qué implica el portazo del partido de Kaiser a Kast.
+Gramsci, A. (1975). Quaderni del carcere (ed. V. Gerratana). Einaudi.
+Infobae (20 de mayo de 2026). Primer cambio de gabinete en Chile: Kast removió a las ministras de Seguridad y a la vocera presidencial a dos meses de asumir.
+Laclau, E. (2005). La razón populista. Fondo de Cultura Económica.
+Laclau, E. y Mouffe, C. (1985). Hegemony and Socialist Strategy: Towards a Radical Democratic Politics. Verso.
+La Tercera (2026). "Derechita cobarde", la gran batalla que se reactivó en la derecha.
+Meganoticias (15 de noviembre de 2026). Cadem: aprobación del Presidente Kast llega a su punto más bajo por paro de camioneros y ciudadanía respalda movilización.
+Novak, A. (16 de abril de 2026). Hungary 2026: An Autopsy of Sixteen Years of Illiberalism. International Viewpoint.
+Popper, K. R. (1963). Conjectures and Refutations: The Growth of Scientific Knowledge. Routledge.
+Primicias (5 de noviembre de 2026). Keiko Fujimori cumple 100 días como presidenta de Perú con una aprobación a la baja.
+Radio Agricultura (1 de noviembre de 2026). Encuesta Cadem: aprobación del Presidente José Antonio Kast baja a 26 %.
+Radio Universidad de Chile (7 de marzo de 2026). "Me piden apoyo y ganan": Donald Trump celebra la victoria de Kast en la cumbre de Miami.
+T13 (6 de septiembre de 2022). Boric realiza primer cambio de gabinete y consolida presencia de ex Concertación en el gobierno.
+T13 (2026a, 23 de septiembre). Qué implica para Chile la adhesión al Escudo de las Américas de Trump. Nota de Ex-Ante.
+T13 (2026b, 4 de noviembre). Partidos oficialistas aumentan presión por cambio de gabinete y Kast convoca comité político a su regreso. Nota de Ex-Ante.
+The Clinic (30 de octubre de 2026). Los diputados PDG que amenazan al Gobierno con apoyar la acusación constitucional contra Rabat y brindarle mayoría a la izquierda en la Cámara.
+Valora Analitik (octubre de 2026). Nueva encuesta de Atlas revela leve caída en aprobación de De La Espriella.
+Washington Examiner (4 de noviembre de 2026). Takeaways from the 2026 midterm elections.
 
 ## El actor bisagra bajo presión: el dilema del PDG y el error de frontera del Partido Liberal
 
