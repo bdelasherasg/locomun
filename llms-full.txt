@@ -453,11 +453,12 @@ Pendiente
 Protocolo de publicación
 ### Cómo evaluamos lo que publicamos
 Recibimos aportes del equipo y de autores externos: académicos, investigadores, asesores y estudiantes. Se evalúan por su calidad, con independencia de quién los firma y de si coinciden con nuestras tesis.
-#### Cuatro clases de aporte
+#### Cinco clases de aporte
 - Análisis con prueba públicaUna tesis sobre un actor, una política o un proceso, con una condición de refutación y su fecha.
 - Ensayo teóricoDesarrollo o crítica de un marco teórico, con sus supuestos declarados.
 - Columna de análisisInterpretación de un hecho de actualidad que separa a la vista hechos, inferencias y valoraciones.
 - Registro de anomalíaUn hecho que nuestro marco no anticipó, con el análisis de por qué falló la anticipación.
+- Informe de análisis estratégicoEstudio de una materia de política pública con las herramientas del Laboratorio: verificación de hechos, análisis del discurso de los actores y evaluación de coherencia, con fuentes citadas.
 #### Diez criterios de evaluación
 - Pregunta y tesisExplícitas.
 - Marco declaradoDesde dónde se escribe y con qué supuestos.
