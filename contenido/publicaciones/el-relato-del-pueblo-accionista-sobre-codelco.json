@@ -1,0 +1,28 @@
+{
+  "slug": "el-relato-del-pueblo-accionista-sobre-codelco",
+  "tipo": "articulo",
+  "clase": "Informe de análisis estratégico",
+  "serie": "Economía y Estado",
+  "numero": 1,
+  "fecha": "2026-11-18",
+  "lectura_minutos": 29,
+  "autor": "Esteban Pinto y Jaime Rojas Catalán",
+  "cargo_autor": "",
+  "titulo": "La coartada del «pueblo accionista»: Anatomía del relato gubernamental sobre Codelco, realidad geológica de la ley del cobre y disputa por la propiedad minera",
+  "titulo_corto": "El relato del «pueblo accionista» sobre Codelco",
+  "bajada": "El informe examina cómo el equipo económico del Gobierno presenta a Codelco desde abril de 2026 y lo compara con datos de ley del mineral, inversión, fiscalidad, fundiciones y asociaciones con privados. Concluye que el relato de Hacienda omite la declinación natural de los yacimientos y que la discusión sobre la propiedad minera exige mirar los límites legales y constitucionales.",
+  "presentacion": [
+    "El texto examina la secuencia de declaraciones del ministro de Hacienda y del biministro de Economía y Minería sobre Codelco entre abril y noviembre de 2026. Revisa cómo presentan a los ciudadanos como <strong>accionistas</strong> de la empresa y qué propuestas de apertura al capital privado se desprenden.",
+    "Aplica el análisis del encuadre y la evaluación de coherencia con datos de Cochilco, CESCO, el Consejo Minero y la Dipres. Concluye que la inversión de Codelco evitó una caída de producción y deja registrada una <strong>condición de refutación</strong> para su tesis central."
+  ],
+  "resumen_portada": "Informe sobre el relato del Gobierno respecto de Codelco: contrasta el encuadre del «accionista» con datos de ley del cobre, inversión, fiscalidad, fundiciones y asociaciones.",
+  "marco": "Encuadre (Entman, 1993; Lakoff, 2004); relaciones de fuerza (Gramsci, 1975); falsabilidad (Popper, 1959, 1963)",
+  "fuentes": "Declaraciones y actas de las juntas de accionistas de Codelco, estados financieros de Codelco, informes de Cochilco, el Consejo Minero y CESCO, el Informe de Finanzas Públicas del tercer trimestre de 2026 de la Dipres, documentos del Ministerio de Minería y de Codelco, y la Ley N.º 19.137.",
+  "condicion": "La tesis central quedaría refutada si Cochilco demostrara que Chuquicamata, El Teniente y Salvador podían sostener su producción hacia 2030 sin los proyectos estructurales de reposición, o si Hacienda ingresara un plan plurianual de capitalización de Codelco que descarte la venta de participaciones en coligadas, la concesión privada de refinerías y la cesión de la explotación de sus divisiones.",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Revisado por una persona distinta de su autor antes de publicarse",
+  "original": null,
+  "proxima_prueba": "",
+  "predicciones": [],
+  "publicado_por": "bernardo"
+}
