@@ -1,0 +1,53 @@
+{
+  "slug": "prueba-publica-5",
+  "tipo": "articulo",
+  "clase": "Análisis con prueba pública",
+  "serie": "Prueba pública",
+  "numero": 5,
+  "fecha": "2026-11-18",
+  "lectura_minutos": 19,
+  "autor": "Bernardo de Las Heras",
+  "cargo_autor": "Codirector de Lo Común",
+  "titulo": "La frontera agotada",
+  "titulo_corto": "La frontera agotada",
+  "bajada": "Una prueba pública al gobierno: gabinete, Chile Vamos y relato",
+  "presentacion": [
+    "El análisis examina si el gobierno de José Antonio Kast puede seguir sin compartir la conducción política con los partidos de <strong>Chile Vamos</strong>, y qué le cuesta compartirla. Revisa cómo se armó el gabinete y qué ocurrió con la aprobación y el respaldo internacional.",
+    "Aplica la distinción entre dominio y dirección de Gramsci y la idea de frontera política de Laclau. Concluye que el gobierno deberá abrir el gabinete a esos partidos y registra <strong>tres anticipaciones</strong> con condición de refutación, verificables el 31 de enero de 2027."
+  ],
+  "resumen_portada": "Prueba pública N.° 5: el gabinete, Chile Vamos y el relato del gobierno de Kast. Tres anticipaciones verificables el 31 de enero de 2027.",
+  "marco": "Dominio y dirección (Gramsci, 1975); hegemonía, frontera política y significantes (Laclau y Mouffe, 1985; Laclau, 2005); capital político (Bourdieu, 1981); falsación (Popper, 1963)",
+  "fuentes": "Prensa nacional e internacional de septiembre de 2022 y de diciembre de 2025 a noviembre de 2026; resultados de las encuestas Cadem, Criteria y AtlasIntel según los medios que los publicaron.",
+  "condicion": "Tres anticipaciones con fecha de verificación el 31 de enero de 2027: un cambio de gabinete con al menos dos nuevos ministros militantes de RN, UDI o Evópoli; efecto sobre la aprobación entre los votantes de Kast; y reacción del Partido Nacional Libertario.",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Revisado por una persona distinta de su autor antes de publicarse",
+  "original": null,
+  "proxima_prueba": "31 de enero de 2027: verificación de las tres anticipaciones.",
+  "predicciones": [
+    {
+      "afirmacion": "Antes del 31 de enero de 2027 habrá un cambio de gabinete con al menos dos nuevos ministros militantes de RN, UDI o Evópoli, y esos tres partidos tendrán más ministros que al 16 de noviembre de 2026.",
+      "refuta": "Que al 31 de enero no haya cambio de gabinete, o que lo haya sin cumplir ambas condiciones.",
+      "verificacion": "31 ene. 2027",
+      "origen": "",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "Si se cumple la primera, la aprobación entre quienes votaron por Kast en segunda vuelta no superará, en las cuatro mediciones Cadem siguientes, el valor de la última medición anterior al cambio.",
+      "refuta": "Que alguna de esas mediciones lo supere en más de tres puntos. Si Cadem no informa el segmento, el resultado será indeterminado.",
+      "verificacion": "Cuatro semanas después del cambio",
+      "origen": "",
+      "estado": "pendiente",
+      "nota": ""
+    },
+    {
+      "afirmacion": "Si se cumple la primera, el Partido Nacional Libertario no integrará el gabinete y su dirigencia calificará el cambio como concesión a Chile Vamos o alejamiento del programa dentro de dos semanas.",
+      "refuta": "Que un militante de ese partido asuma un ministerio, o que su dirigencia respalde el cambio sin reservas.",
+      "verificacion": "Dos semanas después del cambio",
+      "origen": "",
+      "estado": "pendiente",
+      "nota": ""
+    }
+  ],
+  "publicado_por": "bernardo"
+}
