@@ -49,5 +49,8 @@
       "nota": ""
     }
   ],
-  "publicado_por": "bernardo"
+  "publicado_por": "bernardo",
+  "retirado": true,
+  "retirado_por": "bernardo",
+  "retirado_el": "2026-11-19"
 }
