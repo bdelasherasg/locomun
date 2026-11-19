@@ -1,0 +1,28 @@
+{
+  "slug": "singularidad-fisica-cuantica-y-deleuze",
+  "tipo": "articulo",
+  "clase": "Ensayo teórico",
+  "serie": "",
+  "numero": null,
+  "fecha": "2026-11-19",
+  "lectura_minutos": 35,
+  "autor": "Bernardo de Las Heras",
+  "cargo_autor": "Codirector de Lo Común",
+  "titulo": "Lo que la física cuántica y la filosofía de Deleuze permiten decir sobre los modelos de lenguaje",
+  "titulo_corto": "Singularidad, física cuántica y Deleuze",
+  "bajada": "El ensayo revisa cuatro supuestos de la pregunta sobre la cercanía de la singularidad, el momento en que las máquinas superarían a la inteligencia humana. Usa la física cuántica y la filosofía de Deleuze y Guattari para examinar los modelos de lenguaje, y concluye que esa cercanía depende del instrumento con que se mide.",
+  "presentacion": [
+    "Examina la pregunta «¿qué tan cerca está la singularidad?», el momento en que las máquinas superarían a la inteligencia humana. Revisa los supuestos que esa pregunta trae consigo, con ayuda de la <strong>cognición cuántica</strong> y del <strong>esquizoanálisis</strong> de Deleuze y Guattari.",
+    "Compara cómo juzgan las personas y cómo funcionan los modelos de lenguaje, y revisa las pruebas de capacidad de METR y el programa de Penrose sobre el cerebro. Propone cinco proposiciones y declara qué evidencia debilitaría su tesis."
+  ],
+  "resumen_portada": "Ensayo teórico que revisa los supuestos de la pregunta por la singularidad y concluye que su cercanía depende del instrumento con que se mide.",
+  "marco": "Mecánica cuántica relacional (Rovelli, 1996); cognición cuántica (Busemeyer y Bruza, 2024); realismo agencial (Barad, 2007); agenciamiento (Deleuze y Guattari, 1980); falsacionismo (Popper, 1959, 1963)",
+  "fuentes": "Mediciones de horizonte temporal de METR (consultadas el 17 de noviembre de 2026), estudios publicados sobre efectos de orden en personas y en modelos de lenguaje, experimentos sobre microtúbulos y anestesia, y una encuesta a investigadores de inteligencia artificial (Grace et al., 2025).",
+  "condicion": "La tesis perdería fuerza si instrumentos independientes entre sí, con tareas de distintos campos y estables ante cambios en la formulación y el orden de las preguntas, mostraran la misma trayectoria de crecimiento.",
+  "conflictos": "Lo Común asesora a parlamentarios del espacio progresista y liberal. Este análisis no fue encargado por un cliente",
+  "revision": "Revisado por una persona distinta de su autor antes de publicarse",
+  "original": null,
+  "proxima_prueba": "",
+  "predicciones": [],
+  "publicado_por": "bernardo"
+}
