@@ -308,6 +308,21 @@ ${pie}
 }
 fs.mkdirSync(path.join(RAIZ, 'analisis'), { recursive: true });
 pubs.forEach((p) => escribir(`analisis/${p.slug}.html`, pagina(p)));
+// Las publicaciones retiradas desde el panel dejan de tener página propia (y PDF), no solo de aparecer en los listados.
+{
+  const vigentes = new Set(pubs.map((p) => p.slug));
+  const dirPub = path.join(RAIZ, 'contenido', 'publicaciones');
+  const retiradas = fs.existsSync(dirPub) ? fs.readdirSync(dirPub).filter((f) => f.endsWith('.json')).map((f) => {
+    const d = JSON.parse(fs.readFileSync(path.join(dirPub, f), 'utf8'));
+    return d.retirado ? (d.slug || f.replace(/\.json$/, '')) : null;
+  }).filter((s) => s && !vigentes.has(s)) : [];
+  retiradas.forEach((s) => {
+    [`analisis/${s}.html`, `pdf/${s}.pdf`].forEach((r) => {
+      const abs = path.join(RAIZ, r);
+      if (fs.existsSync(abs)) { fs.unlinkSync(abs); console.log(`Retirada: ${r}`); }
+    });
+  });
+}
 
 
 /* ---------- páginas por sección ---------- */
