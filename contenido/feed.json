@@ -1,20 +1,8 @@
 {
  "sitio": "https://locomun.cl",
  "descripcion": "Resumen de la producción pública de Lo Común para que otros sitios la muestren, entre ellos Urgencias Kast, que lo lee cada tres horas. Al publicar una entrega o un estudio nuevo en locomun.cl, agréguelo aquí.",
- "actualizado": "2026-11-18",
+ "actualizado": "2026-11-19",
  "publicaciones": [
-  {
-   "serie": "Prueba pública",
-   "numero": 5,
-   "titulo": "La frontera agotada",
-   "autor": "Bernardo de Las Heras",
-   "fecha": "2026-11-18",
-   "fecha_texto": "18 de noviembre de 2026",
-   "minutos": 19,
-   "proxima_prueba": "31 de enero de 2027: verificación de las tres anticipaciones.",
-   "resumen": "Prueba pública N.° 5: el gabinete, Chile Vamos y el relato del gobierno de Kast. Tres anticipaciones verificables el 31 de enero de 2027.",
-   "url": "https://locomun.cl/analisis/prueba-publica-5.html"
-  },
   {
    "serie": "Economía y Estado",
    "numero": 1,
