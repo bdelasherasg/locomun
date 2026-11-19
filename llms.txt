@@ -17,6 +17,7 @@ Lo Común publica su producción bajo licencia CC BY-SA 4.0 y la expone a la cr�
 
 ## Publicaciones
 
+- [Singularidad, física cuántica y Deleuze](https://locomun.cl/analisis/singularidad-fisica-cuantica-y-deleuze.html): Ensayo teórico que revisa los supuestos de la pregunta por la singularidad y concluye que su cercanía depende del instrumento con que se mide. (Bernardo de Las Heras, 19 de noviembre de 2026)
 - [Economía y Estado N.° 1: El relato del «pueblo accionista» sobre Codelco](https://locomun.cl/analisis/el-relato-del-pueblo-accionista-sobre-codelco.html): Informe sobre el relato del Gobierno respecto de Codelco: contrasta el encuadre del «accionista» con datos de ley del cobre, inversión, fiscalidad, fundiciones y asociaciones. (Esteban Pinto y Jaime Rojas Catalán, 18 de noviembre de 2026)
 - [Prueba pública N.° 4: El dilema del PDG y el error del Partido Liberal](https://locomun.cl/analisis/el-dilema-del-pdg-y-el-error-del.html): Analiza el cruce entre el Partido Liberal y el PDG antes de la acusación constitucional contra el ministro Rabat, y propone dos condiciones para refutar sus tesis. (Esteban Pinto, 16 de noviembre de 2026)
 - [Prueba pública N.° 3: El contrato móvil de la inteligencia artificial](https://locomun.cl/analisis/prueba-publica-3.html): Análisis de por qué las suscripciones de inteligencia artificial de US$20 entregan menos capacidad con el tiempo, con seis predicciones verificables hasta diciembre de 2027. (Esteban Pinto, 12 de noviembre de 2026)
